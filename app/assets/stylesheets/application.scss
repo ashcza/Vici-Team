@@ -1,0 +1,212 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require fullcalendar
+ */
+
+.html {
+  background-color: #edefed;
+}
+
+ button, input[type="submit"] {
+  cursor: pointer;
+  transition: filter .3s, -webkit-filter .3s;
+ }
+
+ button:hover, input[type="submit"]:hover {
+  filter: brightness(85%);
+  -webkit-filter: brightness(85%);
+ }
+
+ button:focus {
+  outline:0;
+  }
+
+.wrapper-background {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+}
+
+.background-text {
+  z-index: 100;
+  position: absolute;
+  color: white;
+  font-size: 3.5em;
+  font-weight: bold;
+  top: 220px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Montserrat";
+  text-align-last: center;
+  letter-spacing: 3px;
+  padding-bottom: 18px;
+  cursor:default;
+
+}
+
+.background-subtext {
+  z-index: 100;
+  position: absolute;
+  color: white;
+  font-size: 1.1em;
+  font-weight: bold;
+  top: 260px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Montserrat";
+  text-align-last: center;
+  cursor:default;
+
+}
+
+
+div {
+  font-family: "Roboto", sans-serif;
+}
+
+.nav-bar {
+  background-color: white;
+}
+
+
+.logoIcon {
+  width: 110px;
+  height: 47px;
+  padding-right: 15px;
+  margin: 7px 10px -3px 20px;
+  border-right: 2px solid #eff2f5;
+}
+
+
+.header-button {
+  text-decoration: none;
+  color: #45494e;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  background-color: white;
+  border: 0px;
+  border-right: 2px solid #eff2f5;
+  padding-right: 23px;
+  padding-left: 25px;
+  height: 42px;
+  width: 50%;
+}
+
+.header-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  text-transform: uppercase;
+  padding-top: 6px;
+  padding-right: 25px;
+  color: #45494e;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+
+.header-name {
+  padding-left: 20px;
+}
+.home-logo {
+  background-color: transparent;
+  border: none
+}
+
+
+.search-bar {
+  position: relative;
+  top: -101px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.search-form {
+  display: flex;
+}
+
+.search-field {
+  height: 40px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border: none;
+  font-size: 16px;
+  padding-left: 15px;
+  border-right: 1px solid #6d6d6e;
+  width: 300px;
+}
+
+.search-button {
+  background-color: #ff5a5f;
+  color: white;
+  padding: 11px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  width: 160px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.dropbtn1{
+  height: 40px;
+  border: none;
+  border-right: 1px solid #6d6d6e;
+  color: gray;
+  border-left: 1px solid #6d6d6e;
+}
+
+.dropbtn2{
+  height: 40px;
+  border: none;
+  color: gray;
+}
+
+
+//Calendar
+.calendar-container {
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-right: 15px;
+}
+
+.fc-left h2 {
+  color: #5687aa;
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+}
+
+.fc-title {
+  word-wrap: break-word;
+  }
+
+span.fc-title {
+    padding: 5px !important;
+    text-overflow: ellipsis;
+    white-space: pre-line;
+    font-size: 13px;
+}
+
+.fc-content {
+  height: 50px;
+}
