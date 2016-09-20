@@ -5,9 +5,6 @@ class Api::GroupsController < ApplicationController
   def create
 
     @group = Group.new(group_params)
-    geoloc = GoogleGeocoder.geocode(@group.location)
-    @group.lng = geoloc.lng
-    @group.lat = geoloc.lat
     @group.creation_date = Time.now
     if @group.save
       render "api/groups/new"
@@ -63,6 +60,6 @@ class Api::GroupsController < ApplicationController
   private
 
   def group_params
-    params.require(:group).permit(:name, :description, :organizer_id, :organizer_name, :location, :img, :distance, :search_string, :single)
+    params.require(:group).permit(:name, :description, :organizer_id, :organizer_name, :img, :distance, :search_string, :single)
   end
 end

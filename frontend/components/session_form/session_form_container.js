@@ -13,6 +13,7 @@ const mapStateToProps = (state, ownProps) => {
   return {
   demo: auto,
   loggedIn: Boolean(state.session.currentUser),
+  currentUser: state.session.currentUser,
   errors: state.session.errors
   };
 };

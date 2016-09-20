@@ -26,7 +26,8 @@ class SessionForm extends React.Component {
 
 	redirectIfLoggedIn(){
 		if (this.props.loggedIn){
-			hashHistory.push("/");
+			debugger;
+			hashHistory.push(`groups/${this.props.currentUser.group}`);
 		}
 	}
 
@@ -137,7 +138,6 @@ class SessionForm extends React.Component {
 		} else {
 		this.demo = true;
 		hashHistory.replace("/login");
-		// this.props.router.push({pathname: "/login", demo: true});
 		}
 	}
 
