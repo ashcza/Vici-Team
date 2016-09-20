@@ -1,4 +1,4 @@
-## Team Manager
+## Vici Team
 
 ### Background
 
