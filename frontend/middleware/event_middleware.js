@@ -8,7 +8,8 @@ import {
 import { fetchEvents,
   createEvent,
   updateEvent,
-  destroyEvent
+  destroyEvent,
+  fetchSingleEvent
 } from '../util/event_api_util';
 
 export default ({getState, dispatch}) => next => action => {
@@ -17,6 +18,9 @@ export default ({getState, dispatch}) => next => action => {
   switch(action.type){
     case EventConstants.REQUEST_EVENTS:
       fetchEvents(action.id, successCallbackRequest);
+      return next(action);
+    case EventConstants.REQUEST_SINGLE_EVENT:
+      fetchSingleEvent(action.groupId, successCallbackNewEvent);
       return next(action);
     case EventConstants.CREATE_EVENT:
       createEvent(action.newEvent, successCallbackNewEvent);

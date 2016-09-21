@@ -4,6 +4,7 @@ export const EventConstants = {
   CREATE_EVENT: "CREATE_EVENT",
   DESTROY_EVENT: "DESTROY_EVENT",
   UPDATE_EVENT: "UPDATE_EVENT",
+  REQUEST_SINGLE_EVENT: "REQUEST_SINGLE_EVENT",
   RECEIVE_SINGLE_EVENT: "RECEIVE_SINGLE_EVENT"
 };
 
@@ -12,13 +13,19 @@ export const requestEvents = (id) => ({
   id
 });
 
+export const requestSingleEvent = (groupId) => ({
+  type: EventConstants.REQUEST_SINGLE_EVENT,
+  groupId
+});
+
+
 export const receiveEvents = (events) => ({
   type: EventConstants.RECEIVE_EVENTS,
   events
 });
 
 export const receiveSingleEvent = (singleEvent) => ({
-  type: EventConstants.RECEIVE_EVENTS,
+  type: EventConstants.RECEIVE_SINGLE_EVENT,
   singleEvent
 });
 

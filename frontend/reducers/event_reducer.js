@@ -7,8 +7,9 @@ const EventReducer = function(state = {}, action){
     case EventConstants.RECEIVE_EVENTS:
       return action.events;
     case EventConstants.RECEIVE_SINGLE_EVENT:
-      const singleEvent = {[action.singleEvent.id]: action.singleEvent};
-      return merge({}, state, singleEvent);
+      let nextState = merge({}, state);
+      nextState.singleEvent = action.singleEvent;
+      return nextState;
     default:
       return state;
   }

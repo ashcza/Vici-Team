@@ -1,4 +1,8 @@
 class Api::EventsController < ApplicationController
+  def index
+    @event = Event.find(event_params[:group_id])
+  end
+
   def show
     group = Group.find(params[:id])
     @events = group.events
@@ -31,7 +35,7 @@ class Api::EventsController < ApplicationController
   end
 
   def event_params
-    params.require(:event).permit(:title, :description, :date, :duration, :group_id, :user_id, :id)
+    params.require(:event).permit(:title, :description, :date, :duration, :group_id, :user_id, :id, :max)
   end
 
 end

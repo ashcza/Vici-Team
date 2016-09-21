@@ -11,6 +11,7 @@ import GroupNewEventContainer from '../group/group_children/group_new_event_cont
 import GroupEditEventContainer from '../group/group_children/group_edit_event_container';
 import GroupCalendarContainer from '../group/group_children/group_calendar_container';
 import GroupMemberContainer from '../group/group_children/group_member_container';
+import CreateTeamsContainer from '../group/group_children/create_teams_container';
 import NewGroupContainer from '../header/new_group_container';
 
 class AppRouter extends React.Component{
@@ -29,7 +30,6 @@ class AppRouter extends React.Component{
   }
 
   _redirectIfLoggedIn(nextState, replace){
-    debugger;
     const currentState = this.context.store.getState();
     const currentUser = currentState.session.currentUser;
     if (currentUser) {
@@ -51,6 +51,7 @@ class AppRouter extends React.Component{
             <Route path="edit/:eventId" component={ GroupEditEventContainer } onEnter={this._ensureLoggedIn} />
             <Route path="calendar" component={ GroupCalendarContainer } onEnter={this._ensureLoggedIn} />
             <Route path="members" component={ GroupMemberContainer } onEnter={this._ensureLoggedIn} />
+            <Route path="create-teams" component={ CreateTeamsContainer } onEnter={this._ensureLoggedIn} />
           </Route>
         </Route>
       </Router>

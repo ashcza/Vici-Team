@@ -32,11 +32,9 @@ render () {
         <div className="wrapper-sidebar" style={divStyle}></div>
       </div>
       <div className="group-sidebar-2">
-        <p className="sidebar-location">{group.location}</p>
-        <p >Created: {group.creation_date}</p>
         <p>Members: {groupMembers && Object.keys(groupMembers).length}</p>
         <p>Organizer: {group.organizer_name}</p>
-        {destroyButton}
+        <p>Cell #: {group.organizer_phone}</p>
       </div>
     </div>
   );}

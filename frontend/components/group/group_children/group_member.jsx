@@ -17,7 +17,11 @@ render () {
       <div className="group-members-list">
         {
           memberKeys.map( key => (
-            <div className="member" key={key}>{this.props.groupMembers[key].name} </div>
+            <div className="member" key={key}>
+              <div>{this.props.groupMembers[key].name}</div>
+              <div>{this.props.groupMembers[key].email}</div>
+              <div>{this.props.groupMembers[key].phone}</div>
+            </div>
           ))
         }
 

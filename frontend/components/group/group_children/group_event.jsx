@@ -80,6 +80,7 @@ class GroupEvent extends React.Component {
               <div>&nbsp;hrs</div>
             </div>
             <div className="event-list-attendees"><b>{events[eventKey].rsvp.length}</b> going</div>
+            <div className="event-list-attendees"><b>({events[eventKey].max}</b> max)</div>
             <div>{rsvpButton}</div>
             <div className="rsvp-button">
             </div>

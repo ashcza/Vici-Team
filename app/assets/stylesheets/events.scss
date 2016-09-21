@@ -48,7 +48,7 @@ ul {
   background-color: white;
   padding: 10px;
   border-radius: 3px;
-  height: 370px;
+  height: 305px;
 }
 
 /* line 58, /Users/ashconzand/Desktop/Sportee/app/assets/stylesheets/events.scss */
@@ -359,5 +359,62 @@ ul {
 }
 
 .tab-container button {
-    margin-right: 2px;
+  margin-right: 2px;
+}
+
+.hideNewEvent {
+  display: none;
+}
+
+.team-list-item {
+  display: flex;
+  width: 370px;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+.color-choice{
+  margin-left: 20px;
+  padding-left: 20px;
+}
+
+.team-names {
+  border: 2px solid #5687aa;
+  border-radius: 3px;
+  margin-left: 20px;
+  margin-top: 5px;
+  width: 300px;
+}
+
+.team-list-page {
+  display: flex;
+}
+
+.team-title{
+  margin-left: 20px;
+  margin-top: 15px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.right-team-list{
+  margin-left: 15px;
+}
+
+.player-names-team{
+  padding-left: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.team-selection-title{
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+.team-selection-title-item{
+  padding-bottom: 2px;
+  font-size: 18px;
+  color: #5687aa;
 }

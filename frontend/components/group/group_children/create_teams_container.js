@@ -1,0 +1,20 @@
+import { connect } from 'react-redux';
+import CreateTeams from './create_teams';
+import { requestSingleEvent } from '../../../actions/event_actions';
+import { updateRsvp } from '../../../actions/rsvp_actions';
+const mapStateToProps = (state, ownProps) => {
+  return ({
+    event: state.events.singleEvent,
+    groupId: ownProps.params.groupId
+  });
+};
+
+const mapDispatchToProps = dispatch => ({
+  requestSingleEvent: (groupId) => dispatch(requestSingleEvent(groupId)),
+  updateRsvp: (userId, groupId, eventId, color) => dispatch(updateRsvp(userId, groupId, eventId, color))
+});
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(CreateTeams);

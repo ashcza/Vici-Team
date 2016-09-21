@@ -1,5 +1,5 @@
 class Rsvp < ActiveRecord::Base
-  validates :event_id, :user_id, presence: true
+  validates :event_id, :user_id, :color, presence: true
 
   belongs_to :user,
     primary_key: :id,

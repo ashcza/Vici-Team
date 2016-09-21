@@ -1,5 +1,5 @@
 class Event < ActiveRecord::Base
-  validates :title, :description, :date, :duration, :group_id, :user_id, presence: true
+  validates :title, :description, :date, :duration, :group_id, :user_id, :max, presence: true
 
   belongs_to :group,
     primary_key: :id,
