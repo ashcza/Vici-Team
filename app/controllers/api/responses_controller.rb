@@ -1,6 +1,8 @@
 class Api::ResponsesController < ApplicationController
+  skip_before_action :verify_authenticity_token
 
   def create
+    debugger;
     body = params['Body'].downcase
     twiml = Twilio::TwiML::Response.new do |r|
       if body == "hello"
