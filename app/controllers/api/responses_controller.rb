@@ -11,6 +11,7 @@ class Api::ResponsesController < ApplicationController
       end
     end
     twiml.text
+    render "api/notifications/index"
   end
 
 end
