@@ -25,6 +25,7 @@ class Api::ResponsesController < ApplicationController
       send_sms("Who dis")
     end
 
+    render "api/notifications/index"
   end
 
   def boot_twilio
