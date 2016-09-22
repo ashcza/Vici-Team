@@ -1,5 +1,4 @@
 class Api::ResponsesController < ApplicationController
-  protect_from_forgery with: :null_session
 
   def create
     body = params['Body'].downcase
