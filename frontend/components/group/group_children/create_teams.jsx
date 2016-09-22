@@ -86,7 +86,7 @@ render () {
           </div>
         </div>
         <button className="text-colors-button"
-          onClick={this.props.textTeamColors}>Text Teams</button>;
+          onClick={this.props.textTeamColors.bind(null, this.props.event.id)}>Text Teams</button>
       </div>
     );
   } else {
