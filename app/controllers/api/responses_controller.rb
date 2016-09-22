@@ -18,7 +18,8 @@ class Api::ResponsesController < ApplicationController
     message_body = params["Body"]
     @incoming_number = params["From"]
     boot_twilio
-
+    if @incoming_number == "+19162010603"
+      send_sms("You have been subscribed to CSS tips by Rob Shneiderman. Today's tip: use flexbox for responsive web design")
     if message_body == "hello"
       send_sms("Well hello Mr. Zand")
     else
