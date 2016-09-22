@@ -29,8 +29,11 @@ class Api::NotificationsController < ApplicationController
 
   def send_message(phone_number, text_message)
 
+    account_sid = Rails.application.secrets.twilio_sid
+    auth_token = Rails.application.secrets.twilio_token
+
     @twilio_number = '+14842026246'
-    @client = Twilio::REST::Client.new('ACee75f455edbe3d114a4b6297ec62600c', 'd3f15bbb2aeea9554ca8d539b7773cd4')
+    @client = Twilio::REST::Client.new account_sid, auth_token
     message = @client.account.messages.create(
       :from => @twilio_number,
       :to => phone_number,

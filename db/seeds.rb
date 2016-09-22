@@ -1,12 +1,12 @@
 
-user1 = User.create!(username: 'ForrestGump', name: "Forrest Gump", password: "password", email: "forrestgump@bubbashrimp.com", phone: "4843542873")
-user2 = User.create!(username: 'ashcza', name: "Ashcon Zand", password: "password", email: "ashcon@gmail.com", phone: "4843542873")
-user3 = User.create!(username: 'parisa', name: "Parisa Salavitabar", password: "password", email: "parisa@gmail.com", phone: "4843542873")
-user4 = User.create!(username: 'kevin', name: "Kevin Sadeghipour", password: "password", email: "kevin@gmail.com", phone: "4843542873")
-user5 = User.create!(username: 'emily', name: "Emily Khalid", password: "password", email: "emily@gmail.com", phone: "4843542873")
-user6 = User.create!(username: 'pegah', name: "Pegah Safabakhsh", password: "password", email: "pegah@gmail.com", phone: "4843542873")
-user7 = User.create!(username: 'yaw', name: "Yaw Aasabere", password: "password", email: "yaw@gmail.com", phone: "4843542873")
-user8 = User.create!(username: 'bijan', name: "Bijan Barikbin", password: "password", email: "bijan@gmail.com", phone: "4843542873")
+user1 = User.create!(username: 'ForrestGump', name: "Forrest Gump", password: "password", email: "forrestgump@bubbashrimp.com", phone: "4843542873", texting: true)
+user2 = User.create!(username: 'ashcza', name: "Ashcon Zand", password: "password", email: "ashcon@gmail.com", phone: "4843542873", texting: false)
+user3 = User.create!(username: 'parisa', name: "Parisa Salavitabar", password: "password", email: "parisa@gmail.com", phone: "4843542873", texting: true)
+user4 = User.create!(username: 'kevin', name: "Kevin Sadeghipour", password: "password", email: "kevin@gmail.com", phone: "4843542873", texting: true)
+user5 = User.create!(username: 'emily', name: "Emily Khalid", password: "password", email: "emily@gmail.com", phone: "4843542873", texting: true)
+user6 = User.create!(username: 'pegah', name: "Pegah Safabakhsh", password: "password", email: "pegah@gmail.com", phone: "4843542873", texting: true)
+user7 = User.create!(username: 'yaw', name: "Yaw Aasabere", password: "password", email: "yaw@gmail.com", phone: "4843542873", texting: true)
+user8 = User.create!(username: 'bijan', name: "Bijan Barikbin", password: "password", email: "bijan@gmail.com", phone: "4843542873", texting: true)
 
 group1 = Group.create!(name: "NYC Football in the Park", description: "This group is for anyone who loves playing Flag Football, but has trouble consistently finding enough people for weekly games in the real world. If you're down to play some friendly games of pickup football with new people, then we'd love to have you! We'll start out trying to organize a game every weekend, and then see what the interest is like. Definitely bring any friends/coworkers/etc who've also been looking for pickup football games in the city.
 

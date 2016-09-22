@@ -1,27 +1,16 @@
 class Api::ResponsesController < ApplicationController
   # skip_before_action :verify_authenticity_token
   #
-  # def create
-  #   body = params['Body'].downcase
-  #   twiml = Twilio::TwiML::Response.new do |r|
-  #     if body == "hello"
-  #       r.Message "Hi!"
-  #     elsif body == "bye"
-  #       r.Message "Goodbye"
-  #     end
-  #   end
-  #   twiml.text
-  #   render "api/notifications/index"
-  # end
+
 
   def create
-    message_body = params["Body"]
+    message_body = params["Body"].downcase
     @incoming_number = params["From"]
     boot_twilio
     if @incoming_number == "+19162010603"
       send_sms("You have been subscribed to CSS tips by Rob Shneiderman. Today's tip: use flexbox for responsive web design")
     elsif message_body == "hello"
-      send_sms("Well hello Mr. Zand")
+      send_sms("Well hello")
     else
       send_sms("Who dis")
     end
