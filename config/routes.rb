@@ -7,6 +7,7 @@ Rails.application.routes.draw do
     resources :rsvps, only: [:index, :show, :create, :update, :destroy]
     resources :memberships, only: [:create, :destroy]
     resources :notifications, only: [:create]
+    resources :responses, only: [:create]
   end
 
   root "static_pages#root"
