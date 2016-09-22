@@ -6,6 +6,7 @@ Rails.application.routes.draw do
     resources :events, only: [:index, :show, :create, :destroy, :update]
     resources :rsvps, only: [:index, :show, :create, :update, :destroy]
     resources :memberships, only: [:create, :destroy]
+    resources :notifications, only: [:create]
   end
 
   root "static_pages#root"

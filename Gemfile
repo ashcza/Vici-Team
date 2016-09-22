@@ -27,6 +27,8 @@ gem 'geokit-rails'
 gem 'fullcalendar-rails'
 gem 'momentjs-rails'
 
+gem 'twilio-ruby'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

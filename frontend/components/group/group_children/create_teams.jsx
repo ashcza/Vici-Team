@@ -85,6 +85,8 @@ render () {
 
           </div>
         </div>
+        <button className="text-colors-button"
+          onClick={this.props.textTeamColors}>Text Teams</button>;
       </div>
     );
   } else {
