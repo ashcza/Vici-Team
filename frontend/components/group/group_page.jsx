@@ -19,7 +19,8 @@ render () {
     <div className="single-group-page">
       <GroupHeader group={this.props.group} groupMembers={this.props.groupMembers}
         currentUser={this.props.currentUser} createMembership={this.props.createMembership}
-        destroyMembership={this.props.destroyMembership} location={this.props.location}/>
+        destroyMembership={this.props.destroyMembership} location={this.props.location}
+        updateTexting={this.props.updateTexting}/>
 
       <div className="outer-group">
         <div className="left-group">

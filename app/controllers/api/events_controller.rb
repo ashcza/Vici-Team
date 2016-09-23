@@ -1,11 +1,15 @@
 class Api::EventsController < ApplicationController
   def index
-    @event = Event.find(event_params[:group_id])
+    group = Group.find(event_params[:group_id])
+    @event = group.events.where("date > ?", Date.today).sort_by{|a| a.date}.first
+    render :index
+    # @event = Event.find(event_params[:group_id])
   end
 
   def show
     group = Group.find(params[:id])
-    @events = group.events
+    @events = group.events.where("date > ?", Date.today).sort_by{|a| a.date}
+    @date_order = @events.map(&:id)
     render :show
   end
 

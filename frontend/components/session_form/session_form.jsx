@@ -86,6 +86,21 @@ class SessionForm extends React.Component {
 							className="login-input" />
 					</label>
 					<br />
+
+					<label> Phone:
+						<input type="text"
+							value={this.state.phone}
+							onChange={this.update("phone")}
+							className="login-input" />
+					</label>
+					<br />
+
+					<label> Group Code:
+						<input type="text"
+							value={this.state.phone}
+							onChange={this.update("phone")}
+							className="login-input" />
+					</label>
 				</div>
 			);
 		}

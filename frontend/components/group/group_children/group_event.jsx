@@ -26,10 +26,10 @@ class GroupEvent extends React.Component {
   constructEventsList () {
     const {events} = this.props;
     let eventKeys;
-    if (!this.props.events) {
+    if (!this.props.events.dateOrder) {
       eventKeys = [];
     } else {
-      eventKeys = Object.keys(this.props.events);
+      eventKeys = this.props.events.dateOrder;
     }
 
     let eventsList = eventKeys.map(eventKey =>  {

@@ -44,6 +44,7 @@ render () {
         <div className="team-list-page">
           <div className="create-team-list" key="woop">
             {
+
               memberKeys.map( key => (
               <div key={key} name={key} className="team-list-item">
                 <div>{this.props.event.rsvp[key][1]}</div>

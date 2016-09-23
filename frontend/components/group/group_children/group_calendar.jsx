@@ -24,6 +24,7 @@ class GroupCalendar extends React.Component {
   }
 
   formatEvents(events) {
+			delete events.dateOrder;
   		let eventKeys = Object.keys(events);
   		return eventKeys.map(id => ({
   			title: events[id].title,

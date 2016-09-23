@@ -1,7 +1,6 @@
 class Api::NotificationsController < ApplicationController
 
   def create
-    debugger;
     @text_message = "This is my first text woo"
     phone_number = '+14843542873'
     send_message(phone_number, @text_message)

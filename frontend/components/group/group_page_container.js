@@ -7,6 +7,7 @@ import {
   destroyGroup,
   requestSingleGroup
   } from '../../actions/group_actions';
+import { updateTexting } from '../../actions/user_actions';
 
 const mapStateToProps = (state, ownProps) => ({
   group: state.groups[ownProps.params.groupId],
@@ -22,7 +23,8 @@ const mapDispatchToProps = (dispatch, ownProps) => {
   createMembership: (groupId, userId) => dispatch(createMembership(groupId, userId)),
   destroyMembership: (groupId, userId) => dispatch(destroyMembership(groupId, userId)),
   destroyGroup: (groupId) => dispatch(destroyGroup(groupId)),
-  requestSingleGroup: (id) => dispatch(requestSingleGroup(id))
+  requestSingleGroup: (id) => dispatch(requestSingleGroup(id)),
+  updateTexting: (userId) => dispatch(updateTexting(userId))
   // logout: () => dispatch(logout())
   });
 };

@@ -1,5 +1,6 @@
 import React from 'react';
 import { withRouter, hashHistory } from 'react-router';
+import Switch from 'react-toggle-switch';
 
 
 class GroupHeader extends React.Component {
@@ -8,6 +9,7 @@ class GroupHeader extends React.Component {
     this._handleClick = this._handleClick.bind(this);
     this._clearActive = this._clearActive.bind(this);
     this._updateTab = this._updateTab.bind(this);
+    this.textToggle = this.textToggle.bind(this);
 
     this.state = {
       events: "inactive-tab",
@@ -15,7 +17,9 @@ class GroupHeader extends React.Component {
       members: "inactive-tab",
       calendar: "inactive-tab",
       createTeams: "inactive-tab",
-      showNewEvent: ""
+      showNewEvent: "",
+      status: "Off",
+      isChecked: true
     };
 
   }
@@ -25,14 +29,23 @@ class GroupHeader extends React.Component {
       this.state.showNewEvent = "hideNewEvent";
     }
     this._updateTab();
-}
-
-componentDidUpdate(prevProps) {
-  if (prevProps.location !== this.props.location) {
-    this._clearActive();
-    this._updateTab();
+    if (this.props.currentUser) {
+      if (this.props.currentUser.texting) {
+        this.state.isChecked = true;
+        this.state.status = "ON";
+      } else {
+        this.state.isChecked = false;
+        this.state.status = "OFF";
+      }
+    }
   }
-}
+
+  componentDidUpdate(prevProps) {
+    if (prevProps.location !== this.props.location) {
+      this._clearActive();
+      this._updateTab();
+    }
+  }
 
   _updateTab() {
   let locStr = this.props.location.split("/").slice(this.props.location.split("/").length - 1)[0];
@@ -70,22 +83,17 @@ componentDidUpdate(prevProps) {
     }
   }
 
+  textToggle () {
+    this.state.isChecked = !this.state.isChecked;
+    this.state.status = this.state.status === "ON" ? "OFF" : "ON";
+    this.props.updateTexting(this.props.currentUser.id);
+    this.forceUpdate();
+    console.log("slide");
+    // this.props.updateTexting(this.props.currentUser.id);
+  }
 
   render () {
     const {group} = this.props;
-    let groupButton = "";
-    if (this.props.groupMembers) {
-      if (Object.keys(this.props.groupMembers).includes(this.props.currentUser.id.toString())) {
-          groupButton = <button className="remove-membership-button"
-            onClick={this.props.destroyMembership.bind(null, this.props.group.id,
-               this.props.currentUser.id)}>Remove Membership</button>;
-        } else {
-          groupButton = <button className="create-membership-button"
-            onClick={this.props.createMembership.bind(null,this.props.group.id,
-               this.props.currentUser.id)}>Join Group</button>;
-        }
-      }
-
     return (
       <div className="group-header">
         <div className="group-header-title">{group.name}</div>
@@ -94,11 +102,18 @@ componentDidUpdate(prevProps) {
             <li className="tab-container" ><button className={this.state.events} onClick={this._handleClick.bind(null, "home")}>Events</button></li>
             <li className="tab-container" ><button className={`${this.state.newEvent} ${this.state.showNewEvent}`} onClick={this._handleClick.bind(null, "newEvent")}>New Event</button></li>
             <li className="tab-container" ><button className={`${this.state.createTeams} ${this.state.showNewEvent}`} onClick={this._handleClick.bind(null, "createTeams")}>Create Teams</button></li>
-            <li className="tab-container" ><button className={this.state.members}  onClick={this._handleClick.bind(null, "members")}>Members</button></li>
+            <li className="tab-container" ><button className={this.state.members} onClick={this._handleClick.bind(null, "members")}>Members</button></li>
             <li className="tab-container" ><button className={this.state.calendar} onClick={this._handleClick.bind(null, "calendar")}>Calendar</button></li>
           </ul>
           <div className="right-header">
-          <div>{groupButton}</div>
+            <div className="toggle-text">
+              <div>Text Notifications</div>
+              <div>{this.state.status}</div>
+            </div>
+            <label className="switch">
+              <input id="myCheck" type="checkbox" onClick={this.textToggle} checked={this.state.isChecked}/>
+              <div className="slider round"></div>
+            </label>
           </div>
         </div>
       </div>

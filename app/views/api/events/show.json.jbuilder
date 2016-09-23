@@ -6,6 +6,7 @@
   rsvps = event.rsvps.to_a.each do |rsvp|
     user_rsvps << rsvp.user_id
   end
+  json.dateOrder @date_order
   json.set! event.id do
     json.extract! event, :id, :title, :description, :duration, :group_id, :user_id, :max
     json.datetime datetime
