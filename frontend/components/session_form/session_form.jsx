@@ -97,8 +97,8 @@ class SessionForm extends React.Component {
 
 					<label> Group Code:
 						<input type="text"
-							value={this.state.phone}
-							onChange={this.update("phone")}
+							value={this.state.code}
+							onChange={this.update("code")}
 							className="login-input" />
 					</label>
 				</div>

@@ -1,15 +1,18 @@
 class Api::UsersController < ApplicationController
 
   def create
-		@user = User.new(user_params)
-    @user.texting = true
-		if @user.save
-			login(@user)
-      debugger;
-			render "api/users/show"
-		else
-			render json: @user.errors.full_messages, status: 422
-		end
+    debugger;
+    if Group.find_by(code: user_params[:code]).code === user_params[:code]
+  		@user = User.new(username: user_params[:username], name: user_params[:name], password: user_params[:password], email: user_params[:email], phone: user_params[:phone], texting: true)
+
+  		if @user.save
+  			login(@user)
+        @membership = Membership.create(user_id: @user.id, group_id: Group.find_by(code: user_params[:code]).id)
+  			render "api/users/show"
+  		else
+  			render json: @user.errors.full_messages, status: 422
+  		end
+    end
 	end
 
   def update

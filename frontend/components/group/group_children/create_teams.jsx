@@ -11,10 +11,6 @@ class CreateTeams extends React.Component {
     this.props.requestSingleEvent(this.props.groupId);
   }
 
-  // nameChange(e) {
-	// this.setState({ username: e.target.value});
-	// }
-
   handleChange(userId, e) {
     this.props.updateRsvp(userId, this.props.groupId, this.props.event.id, e.target.value);
   }
