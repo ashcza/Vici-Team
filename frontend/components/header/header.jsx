@@ -37,8 +37,8 @@ function Header({currentUser, logout, router}){
     <div>
       <div className="nav-bar">
         <button type="submit" className="home-logo">
-          <img className="logoIcon" alt="Home" src="http://res.cloudinary.com/ashcon/image/upload/v1473132525/SPORTEE_RED_filled_es8sto.png"
-            onClick={_navigateToHome.bind(null, router)} />
+          <img className="logoIcon" alt="Home" src="http://res.cloudinary.com/ashcon/image/upload/v1475003658/vici/vici_team_final_2.png"
+             />
         </button>​
 
         <div>{navStatus(currentUser, logout, router)}</div>
@@ -50,8 +50,8 @@ function Header({currentUser, logout, router}){
     <div>
       <div className="nav-bar">
         <button type="submit" className="home-logo">
-          <img className="logoIcon" alt="Home" src="http://res.cloudinary.com/ashcon/image/upload/v1473132525/SPORTEE_RED_filled_es8sto.png"
-            onClick={_navigateToHome.bind(null, router)} />
+          <img className="logoIcon" alt="Home" src="http://res.cloudinary.com/ashcon/image/upload/v1475003658/vici/vici_team_final_2.png"
+             />
         </button>​
       <div>{sessionLinks()}</div>
       </div>
