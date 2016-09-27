@@ -387,7 +387,6 @@ ul {
 .team-names {
   border: 2px solid #5687aa;
   border-radius: 3px;
-  margin-left: 20px;
   margin-top: 5px;
   width: 300px;
 }
@@ -397,7 +396,6 @@ ul {
 }
 
 .team-title{
-  margin-left: 20px;
   margin-top: 15px;
   font-weight: 700;
   font-size: 18px;
@@ -424,6 +422,9 @@ ul {
   color: #5687aa;
 }
 
+.create-team-list{
+  margin-right: 20px;
+}
 
 /* The switch - the box around the slider */
 .switch {
