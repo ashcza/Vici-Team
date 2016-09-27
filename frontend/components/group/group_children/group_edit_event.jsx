@@ -43,17 +43,17 @@ class GroupEditEvent extends React.Component{
               <input type="text" value={this.state.title}
                 onChange={this.update("title")} className="event-field"/>
 
-              <label className="event-field">Event Date and Time</label>
+              <label>Event Date and Time</label>
               <input type="datetime-local" value={this.state.date}
-                onChange={this.update("date")} className="event-field"/>
+                onChange={this.update("date")} className="event-field-date"/>
 
-              <label className="event-field">Duration (hrs)</label>
+              <label className="event-field-date">Duration (hrs)</label>
               <input min='0' max='24' step='.5' type="number" value={this.state.duration}
-                onChange={this.update("duration")} className="event-field"/>
+                onChange={this.update("duration")} className="event-field-num"/>
 
               <label className="event-field">Maximum Players</label>
               <input min='0' step='1' type="number" value={this.state.max}
-                onChange={this.update("max")} className="event-field"/>
+                onChange={this.update("max")} className="event-field-num"/>
 
               <label className="event-field">Event Description</label>
 
