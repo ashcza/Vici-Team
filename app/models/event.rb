@@ -15,4 +15,12 @@ class Event < ActiveRecord::Base
     through: :rsvps,
     source: :user
 
+    def password=(password)
+      @password = password
+  		self.password_digest = BCrypt::Password.create(password)
+  	end
+  def print_stuff
+    print "The cron is working"
+  end
+
 end
