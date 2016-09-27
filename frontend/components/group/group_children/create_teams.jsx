@@ -5,6 +5,9 @@ class CreateTeams extends React.Component {
   constructor(props) {
     super(props);
     this.handleChange = this.handleChange.bind(this);
+    this.state = {
+      textButton: ""
+    };
   }
 
   componentDidMount() {
@@ -18,10 +21,15 @@ class CreateTeams extends React.Component {
 render () {
   if (this.props.event) {
     let rsvpList = this.props.event.rsvp;
-    const memberKeys = Object.keys(this.props.event.rsvp);
+    if (this.props.groups[Object.keys(this.props.groups)[0]].organizer_id !== this.props.currentUser.id) {
+      this.memberKeys = [];
+      this.state.textButton = "hide-texting";
+    } else {
+      this.memberKeys = Object.keys(this.props.event.rsvp);
+    }
     let blackTeam = [];
     let whiteTeam = [];
-    for(let i = 0; i < memberKeys.length; i++) {
+    for(let i = 0; i < Object.keys(this.props.event.rsvp).length; i++) {
       if (rsvpList[i][2] === "white") {
         whiteTeam.push(rsvpList[i][1]);
       } else if (rsvpList[i][2] === "black") {
@@ -41,7 +49,7 @@ render () {
           <div className="create-team-list" key="woop">
             {
 
-              memberKeys.map( key => (
+              this.memberKeys.map( key => (
               <div key={key} name={key} className="team-list-item">
                 <div>{this.props.event.rsvp[key][1]}</div>
                 <form>
@@ -82,7 +90,7 @@ render () {
 
           </div>
         </div>
-        <button className="text-colors-button"
+        <button className={`text-colors-button ${this.state.textButton}` }
           onClick={this.props.textTeamColors.bind(null, this.props.event.id)}>Text Teams</button>
       </div>
     );

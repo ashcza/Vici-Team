@@ -6,7 +6,10 @@ import { textTeamColors } from '../../../actions/text_actions';
 const mapStateToProps = (state, ownProps) => {
   return ({
     event: state.events.singleEvent,
-    groupId: ownProps.params.groupId
+    groupId: ownProps.params.groupId,
+    groups: state.groups,
+    currentUser: state.session.currentUser
+
   });
 };
 
