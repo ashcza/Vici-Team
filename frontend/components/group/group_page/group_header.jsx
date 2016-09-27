@@ -101,7 +101,7 @@ class GroupHeader extends React.Component {
           <ul className="left-header">
             <li className="tab-container" ><button className={this.state.events} onClick={this._handleClick.bind(null, "home")}>Events</button></li>
             <li className="tab-container" ><button className={`${this.state.newEvent} ${this.state.showNewEvent}`} onClick={this._handleClick.bind(null, "newEvent")}>New Event</button></li>
-            <li className="tab-container" ><button className={`${this.state.createTeams} ${this.state.showNewEvent}`} onClick={this._handleClick.bind(null, "createTeams")}>Create Teams</button></li>
+            <li className="tab-container" ><button className={`${this.state.createTeams}`} onClick={this._handleClick.bind(null, "createTeams")}>Teams</button></li>
             <li className="tab-container" ><button className={this.state.members} onClick={this._handleClick.bind(null, "members")}>Members</button></li>
             <li className="tab-container" ><button className={this.state.calendar} onClick={this._handleClick.bind(null, "calendar")}>Calendar</button></li>
           </ul>
