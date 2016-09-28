@@ -1,7 +1,6 @@
 class Api::UsersController < ApplicationController
 
   def create
-    debugger;
     if Group.find_by(code: user_params[:code]) != nil
       if user_params[:phone] != nil && user_params[:phone].split("").all? {|num| ("0".."9").to_a.include?(num)}
     		@user = User.new(username: user_params[:username], name: user_params[:name], password: user_params[:password], email: user_params[:email], phone: user_params[:phone], texting: true)
