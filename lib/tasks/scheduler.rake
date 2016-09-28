@@ -1,4 +1,6 @@
 desc "This task is called by the Heroku scheduler add-on"
 task :update_feed => :environment do
-  debugger;
+  puts "Updating feed..."
+  Event.print_stuff
+
 end
