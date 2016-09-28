@@ -20,8 +20,30 @@ class Event < ActiveRecord::Base
 		self.password_digest = BCrypt::Password.create(password)
 	end
 
-  def self.print_stuff
-    puts "The cron is working"
+  def self.text_event
+    User.all.each do |user|
+      @text_message = "ARE YOU PLAYIN?"
+      phone_number = '+1' + user.phone
+      send_message(phone_number, @text_message)
+    end
+
+  end
+
+  def send_message(phone_number, text_message)
+
+    account_sid = Rails.application.secrets.twilio_sid
+    auth_token = Rails.application.secrets.twilio_token
+
+    @twilio_number = '+14842026246'
+    @client = Twilio::REST::Client.new account_sid, auth_token
+    message = @client.account.messages.create(
+      :from => @twilio_number,
+      :to => phone_number,
+      :body => text_message,
+      # US phone numbers can make use of an image as well.
+      # :media_url => image_url
+    )
+    puts message.to
   end
 
 end
