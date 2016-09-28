@@ -1,7 +1,7 @@
 @events.each do |event|
   datetime = event.date
   date = event.date.strftime("%b %e, %Y")
-  time = event.date.strftime("%H:%M %p")
+  time = event.date.strftime("%l:%M %p")
   user_rsvps = []
   rsvps = event.rsvps.to_a.each do |rsvp|
     user_rsvps << rsvp.user_id

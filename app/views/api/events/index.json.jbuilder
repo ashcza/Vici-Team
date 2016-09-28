@@ -1,6 +1,6 @@
 datetime = @event.date
 date = @event.date.strftime("%A, %b %e, %Y")
-time = @event.date.strftime("%H:%M %p")
+time = @event.date.strftime("%l:%M %p")
 user_rsvps = []
 rsvps = @event.rsvps.to_a.each do |rsvp|
   user_rsvps << [rsvp.user_id, User.find(rsvp.user_id).name, rsvp.color]

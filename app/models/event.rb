@@ -21,18 +21,18 @@ class Event < ActiveRecord::Base
 	end
 
   def self.text_event
-    group = Group.find(1)
     @event = group.events.where("date > ?", Date.today).sort_by{|a| a.date}.first
-    date = @event.date.strftime("%A, %b %e")
-    time = @event.date.strftime("%H:%M %p")
-    # check to see if Texting is on
-    # give event title, date, time, message: Text back "in" if you want to play on
-    Event.send_message("+14843542873", "It actually is texting")
-    User.all.each do |user|
-      if user.texting
-        @text_message = "Reply 'in' if you would like to play on #{date} at #{time}\n\n #{@event.description}"
-        phone_number = '+1' + user.phone
-        Event.send_message(phone_number, @text_message)
+    if ((Time.zone.now - @event.date).to_i / 1.day) == -2
+      group = Group.find(1)
+      date = @event.date.strftime("%A, %b %e")
+      time = @event.date.strftime("%l:%M %p")
+
+      User.all.each do |user|
+        if user.texting
+          @text_message = "Reply 'in' if you would like to play on #{date} at #{time}\n\n #{@event.description}"
+          phone_number = '+1' + user.phone
+          Event.send_message(phone_number, @text_message)
+        end
       end
     end
   end
