@@ -19,6 +19,6 @@
 
 # Learn more: http://github.com/javan/whenever
 
-every 1.day, :at => '4:20 pm' do
-  runner "Event.print_stuff"
-end
+# every 1.day, :at => '4:20 pm' do
+#   runner "Event.print_stuff"
+# end

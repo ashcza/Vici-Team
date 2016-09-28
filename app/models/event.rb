@@ -21,15 +21,20 @@ class Event < ActiveRecord::Base
 	end
 
   def self.text_event
+    # group = Group.find(event_params[:group_id])
+    # @event = group.events.where("date > ?", Date.today).sort_by{|a| a.date}.first
+    # date = @event.date.strftime("%A, %b %e, %Y")
+    # time = @event.date.strftime("%H:%M %p")
+
     User.all.each do |user|
       @text_message = "ARE YOU PLAYIN?"
       phone_number = '+1' + user.phone
-      send_message(phone_number, @text_message)
+      Event.send_message(phone_number, @text_message)
     end
 
   end
 
-  def send_message(phone_number, text_message)
+  def self.send_message(phone_number, text_message)
 
     account_sid = Rails.application.secrets.twilio_sid
     auth_token = Rails.application.secrets.twilio_token
