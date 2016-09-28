@@ -21,7 +21,7 @@ class Event < ActiveRecord::Base
 	end
 
   def self.text_event
-    group = Group.find(event_params[:group_id])
+    group = Group.find(1)
     @event = group.events.where("date > ?", Date.today).sort_by{|a| a.date}.first
     date = @event.date.strftime("%A, %b %e")
     time = @event.date.strftime("%H:%M %p")
@@ -34,7 +34,6 @@ class Event < ActiveRecord::Base
         Event.send_message(phone_number, @text_message)
       end
     end
-
   end
 
   def self.send_message(phone_number, text_message)
