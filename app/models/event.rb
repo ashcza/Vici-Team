@@ -20,7 +20,7 @@ class Event < ActiveRecord::Base
   		self.password_digest = BCrypt::Password.create(password)
   	end
   def print_stuff
-    print "The cron is working"
+    puts "The cron is working"
   end
 
 end
