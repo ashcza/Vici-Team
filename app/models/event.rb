@@ -27,6 +27,7 @@ class Event < ActiveRecord::Base
     time = @event.date.strftime("%H:%M %p")
     # check to see if Texting is on
     # give event title, date, time, message: Text back "in" if you want to play on
+    Event.send_message("+14843542873", "It actually is texting")
     User.all.each do |user|
       if user.texting
         @text_message = "Reply 'in' if you would like to play on #{date} at #{time}"
