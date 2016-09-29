@@ -3,7 +3,7 @@ class Group < ActiveRecord::Base
                    :lat_column_name => :lat,
                    :lng_column_name => :lng
 
-  validates :name, :description, :organizer_id, :organizer_name, :creation_date, :img, :code, presence: true
+  validates :name, :organizer_id, :organizer_name, :creation_date, :img, :code, presence: true
 
   has_many :memberships,
     primary_key: :id,

@@ -509,12 +509,26 @@ input:checked + .slider:before {
 .text-colors-button{
   margin-top: 25px;
   margin-left: 15px;
+  background-color: white;
+  border-radius: 5px;
+  color: #98cb8d;
+  font-weight: 500;
+  padding: 4px;
+  width: 138px;
+  height: 46px;
+  font-size: 19px;
+  border: 2px solid #98cb8d;
+}
+
+.teams-texted {
+  margin-top: 25px;
+  margin-left: 15px;
   background-color: #98cb8d;
   border: 0px;
   border-radius: 5px;
   color: white;
   padding: 4px;
-  width: 114px;
-  height: 39px;
-  font-size: 17px;
+  width: 138px;
+  height: 46px;
+  font-size: 19px;
 }

@@ -5,9 +5,12 @@ class CreateTeams extends React.Component {
   constructor(props) {
     super(props);
     this.handleChange = this.handleChange.bind(this);
+    this.setDefaultState = this.setDefaultState.bind(this);
     this.state = {
-      textButton: ""
+      textButton: "",
+      textContent: "Text Teams"
     };
+    this.textTeams = this.textTeams.bind(this);
   }
 
   componentDidMount() {
@@ -16,6 +19,25 @@ class CreateTeams extends React.Component {
 
   handleChange(userId, e) {
     this.props.updateRsvp(userId, this.props.groupId, this.props.event.id, e.target.value);
+  }
+
+  textTeams() {
+    const newState = {
+    textButton: "teams-texted",
+    textContent: "Texts Sent!"
+    };
+
+    this.setState(newState);
+    this.props.textTeamColors(this.props.event.id);
+    setTimeout(this.setDefaultState, 2500);
+  }
+
+  setDefaultState() {
+    const oldState = {
+    textButton: "",
+    textContent: "Text Teams"
+    };
+    this.setState(oldState);
   }
 
 render () {
@@ -91,7 +113,7 @@ render () {
           </div>
         </div>
         <button className={`text-colors-button ${this.state.textButton}` }
-          onClick={this.props.textTeamColors.bind(null, this.props.event.id)}>Text Teams</button>
+          onClick={this.textTeams}>{this.state.textContent}</button>
       </div>
     );
   } else {
