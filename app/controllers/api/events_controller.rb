@@ -3,7 +3,6 @@ class Api::EventsController < ApplicationController
     group = Group.find(event_params[:group_id])
     @event = group.events.where("date > ?", Date.today).sort_by{|a| a.date}.first
     render :index
-    # @event = Event.find(event_params[:group_id])
   end
 
   def show
