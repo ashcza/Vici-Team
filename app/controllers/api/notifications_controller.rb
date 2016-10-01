@@ -8,9 +8,12 @@ class Api::NotificationsController < ApplicationController
     time = event.date.strftime("%l:%M %p")
 
     event.rsvps.each do |rsvp|
-      text_message = "Teams for game on #{date} at #{time}\n\nBlack Team:\n#{black_team.join(', ')}\n\nWhite Team:\n#{white_team.join(', ')}"
-      phone_number = User.find(rsvp.user_id).phone
-      send_message(phone_number, text_message)
+      user = User.find(rsvp.user_id)
+      if user.texting
+        text_message = "Teams for game on #{date} at #{time}\n\nBlack Team:\n#{black_team.join(', ')}\n\nWhite Team:\n#{white_team.join(', ')}"
+        phone_number = User.find(rsvp.user_id).phone
+        send_message(phone_number, text_message)
+      end
     end
     render "api/notifications/index"
   end
