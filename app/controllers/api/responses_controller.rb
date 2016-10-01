@@ -19,7 +19,7 @@ class Api::ResponsesController < ApplicationController
         if event.max == user_rsvps.length
           send_sms("Sorry, the game on #{date} at #{time} has reached the max capacity of #{event.max} players.")
         else
-          Rsvp.create(event_id: event.id, user_id: text_user_id)
+          Rsvp.create(event_id: event.id, user_id: text_user_id, color: "none")
           send_sms("You have successfully rsvp'd to the game on #{date} at #{time}.\n\nYou can reply 'out' anytime prior to the game to remove your rsvp.")
         end
       end
