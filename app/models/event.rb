@@ -29,7 +29,7 @@ class Event < ActiveRecord::Base
 
       User.all.each do |user|
         if user.texting
-          @text_message = "Reply 'in' if you would like to play on #{date} at #{time}\n\n#{@event.name}\n#{@event.description}"
+          @text_message = "Reply 'in' if you would like to play on #{date} at #{time}\n\n#{@event.title}\n#{@event.description}"
           phone_number = '+1' + user.phone
           Event.send_message(phone_number, @text_message)
         end
