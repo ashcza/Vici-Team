@@ -33,6 +33,7 @@ class Api::ResponsesController < ApplicationController
         send_sms("You have successfully removed your rsvp to the game on #{date} at #{time}.\n\nYou can reply 'in' anytime prior to the game to add your rsvp (if there is room).")
       else
         send_sms("You do not have an rsvp to the game on #{date} at #{time}.\n\nYou can reply 'in' anytime prior to the game to add your rsvp (if there is room).")
+      end
     else
       send_sms("Sorry, command not recognized. Please text 'in' if you would like to rsvp to the game on #{date} at #{time}.\n\nIf you have already rsvp'd to this game, you can text 'out' to remove your rsvp.")
     end
@@ -43,13 +44,13 @@ class Api::ResponsesController < ApplicationController
       account_sid = Rails.application.secrets.twilio_sid
       auth_token = Rails.application.secrets.twilio_token
       @client = Twilio::REST::Client.new account_sid, auth_token
-    end
+  end
 
-    def send_sms(message)
-      sms = @client.messages.create(
-        from: Rails.application.secrets.twilio_number,
-        to: @incoming_number,
-        body: message
-      )
-    end
+  def send_sms(message)
+    sms = @client.messages.create(
+      from: Rails.application.secrets.twilio_number,
+      to: @incoming_number,
+      body: message
+    )
+  end
 end
