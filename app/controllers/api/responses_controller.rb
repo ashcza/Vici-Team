@@ -1,7 +1,4 @@
 class Api::ResponsesController < ApplicationController
-  # skip_before_action :verify_authenticity_token
-  #
-
 
   def create
     message_body = params["Body"].downcase
@@ -12,9 +9,12 @@ class Api::ResponsesController < ApplicationController
     date = event.date.strftime("%A, %b %e")
     time = event.date.strftime("%l:%M %p")
     boot_twilio
+    debugger
     if User.where(phone: incoming_number[2..-1]).length == 0
       send_sms("Sorry this number is not registered to an account.")
+      debugger
     elsif message_body.downcase == "in"
+      debugger
       text_user_id = User.where(phone: incoming_number[2..-1]).first.id
       if user_rsvps.include?(text_user_id)
         send_sms("You have already rsvp'd to the game on #{date} at #{time}")
@@ -27,6 +27,7 @@ class Api::ResponsesController < ApplicationController
         end
       end
     elsif message_body.downcase == "out"
+      debugger
       text_user_id = User.where(phone: incoming_number[2..-1]).first.id
       if user_rsvps.include?(text_user_id)
         Rsvp.where(user_id: text_user_id).destroy_all
