@@ -9,10 +9,10 @@ class Api::ResponsesController < ApplicationController
     date = event.date.strftime("%A, %b %e")
     time = event.date.strftime("%l:%M %p")
     boot_twilio
-    if User.where(phone: incoming_number[2..-1]).length == 0
+    if User.where(phone: @incoming_number[2..-1]).length == 0
       send_sms("Sorry this number is not registered to an account.")
     elsif message_body.downcase == "in"
-      text_user_id = User.where(phone: incoming_number[2..-1]).first.id
+      text_user_id = User.where(phone: @incoming_number[2..-1]).first.id
       if user_rsvps.include?(text_user_id)
         send_sms("You have already rsvp'd to the game on #{date} at #{time}")
       else
@@ -24,7 +24,7 @@ class Api::ResponsesController < ApplicationController
         end
       end
     elsif message_body.downcase == "out"
-      text_user_id = User.where(phone: incoming_number[2..-1]).first.id
+      text_user_id = User.where(phone: @incoming_number[2..-1]).first.id
       if user_rsvps.include?(text_user_id)
         Rsvp.where(user_id: text_user_id).destroy_all
         send_sms("You have successfully removed your rsvp to the game on #{date} at #{time}.\n\nYou can reply 'in' anytime prior to the game to add your rsvp (if there is room).")
