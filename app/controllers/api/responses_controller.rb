@@ -1,6 +1,7 @@
 class Api::ResponsesController < ApplicationController
 
   def create
+    debugger
     message_body = params["Body"].downcase
     incoming_number = params["From"]
     group = Group.find(1)
