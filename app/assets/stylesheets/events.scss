@@ -4,7 +4,7 @@
   padding-top: 70px;
   padding-bottom: 20px;
   font-size: 37px;
-  background-color: #56b68b;
+  background-color: #0B3C5D;
   color: white;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 2px;
@@ -20,7 +20,7 @@
   // text-align: center;
   display: flex;
   align-items: center;
-  color: #5687aa;
+  color: #0B3C5D;
   font-weight: 700;
   letter-spacing: 1.5px;
   font-size: 14px;
@@ -137,7 +137,7 @@ ul {
   font-size: 18px;
   font-weight: 900;
   padding-bottom: 8px;
-  color: #005580;
+  color: #0B3C5D;
 }
 
 /* line 121, /Users/ashconzand/Desktop/Sportee/app/assets/stylesheets/events.scss */
@@ -151,7 +151,7 @@ ul {
   display: flex;
 }
 .sidebar-location {
-    color: #3a87ad;
+    color: #0B3C5D;
     font-weight: bold;
 }
 .group-sidebar-2 p {
@@ -171,7 +171,7 @@ ul {
 
 .create-rsvp-button {
   margin-top: 5px;
-  background-color: #98cb8d;
+  background-color: #56b68b;
   border: 0px;
   border-radius: 5px;
   color: white;
@@ -238,7 +238,7 @@ ul {
   .new-event-title {
       font-family: "Roboto", sans-serif;
       letter-spacing: 2px;
-      color: #3a87ad;
+      color: #0B3C5D;
       margin-bottom: 0px;
       margin-top: 0px;
       font-size: 24px;
@@ -295,7 +295,7 @@ ul {
 
   .new-event-button {
       margin-top: 8px;
-      background-color: #98cb8d;
+      background-color: #56b68b;
       border: 0px;
       border-radius: 5px;
       color: white;
@@ -325,13 +325,13 @@ ul {
   }
 
   .inactive-tab {
-      border: 1px solid #5687aa;
+      border: 1px solid #0B3C5D;
       border-bottom: 0px;
       display: block;
       min-height: 100%;
       padding: 15px 20px;
       background-color: white;
-      color: #5687aa;
+      color: #0B3C5D;
       border-radius: 8px 8px 0px 0px;
       font-size: 16px;
       letter-spacing: 1.5px;
@@ -339,12 +339,12 @@ ul {
   }
 
   .active-tab {
-      border: 1px solid #5687aa;
+      border: 1px solid #D9B310;
       border-bottom: 0px;
       display: block;
       min-height: 100%;
       padding: 15px 20px;
-      background-color: #3a87ad;
+      background-color: #D9B310;
       color: white;
       border-radius: 8px 8px 0px 0px;
       font-size: 16px;
@@ -395,7 +395,7 @@ ul {
 }
 
 .team-names {
-  border: 2px solid #5687aa;
+  border: 2px solid #0B3C5D;
   border-radius: 3px;
   margin-top: 5px;
   width: 300px;
@@ -426,7 +426,7 @@ ul {
 .team-selection-title-item{
   padding-bottom: 2px;
   font-size: 18px;
-  color: #5687aa;
+  color: #0B3C5D;
 }
 
 .create-team-list{
@@ -507,28 +507,29 @@ input:checked + .slider:before {
 }
 
 .text-colors-button{
-  margin-top: 25px;
+  margin-top: 30px;
   margin-left: 15px;
-  background-color: white;
-  border-radius: 5px;
-  color: #98cb8d;
-  font-weight: 500;
-  padding: 4px;
-  width: 138px;
-  height: 46px;
-  font-size: 19px;
-  border: 2px solid #98cb8d;
-}
-
-.teams-texted {
-  margin-top: 25px;
-  margin-left: 15px;
-  background-color: #98cb8d;
+  background-color: #56b68b;
   border: 0px;
   border-radius: 5px;
   color: white;
   padding: 4px;
-  width: 138px;
-  height: 46px;
-  font-size: 19px;
+  width: 120px;
+  height: 40px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+}
+
+.teams-texted {
+  margin-top: 30px;
+  margin-left: 15px;
+  background-color: #D9B310;
+  border: 0px;
+  border-radius: 5px;
+  color: white;
+  padding: 4px;
+  width: 120px;
+  height: 40px;
+  font-size: 14px;
 }

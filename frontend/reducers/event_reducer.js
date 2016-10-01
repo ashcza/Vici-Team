@@ -6,7 +6,6 @@ const EventReducer = function(state = {}, action){
   switch(action.type){
 
     case EventConstants.RECEIVE_EVENTS:
-    debugger;
       return action.events;
     case EventConstants.RECEIVE_SINGLE_EVENT:
       let nextState = merge({}, state);
