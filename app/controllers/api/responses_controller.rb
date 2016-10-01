@@ -1,21 +1,17 @@
 class Api::ResponsesController < ApplicationController
 
   def create
-    debugger
     message_body = params["Body"].downcase
-    incoming_number = params["From"]
+    @incoming_number = params["From"]
     group = Group.find(1)
     event = group.events.where("date > ?", Date.today).sort_by{|a| a.date}.first
     user_rsvps = event.rsvps.map {|rsvp| rsvp.user_id }
     date = event.date.strftime("%A, %b %e")
     time = event.date.strftime("%l:%M %p")
     boot_twilio
-    debugger
     if User.where(phone: incoming_number[2..-1]).length == 0
       send_sms("Sorry this number is not registered to an account.")
-      debugger
     elsif message_body.downcase == "in"
-      debugger
       text_user_id = User.where(phone: incoming_number[2..-1]).first.id
       if user_rsvps.include?(text_user_id)
         send_sms("You have already rsvp'd to the game on #{date} at #{time}")
@@ -28,7 +24,6 @@ class Api::ResponsesController < ApplicationController
         end
       end
     elsif message_body.downcase == "out"
-      debugger
       text_user_id = User.where(phone: incoming_number[2..-1]).first.id
       if user_rsvps.include?(text_user_id)
         Rsvp.where(user_id: text_user_id).destroy_all
