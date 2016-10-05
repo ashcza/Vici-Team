@@ -12,7 +12,6 @@ class SessionForm extends React.Component {
 		this._handleDemo = this._handleDemo.bind(this);
 		this.nameChange = this.nameChange.bind(this);
 		this.passwordChange = this.passwordChange.bind(this);
-		debugger;
 	}
 
 	componentWillReceiveProps(newProps){
@@ -47,7 +46,7 @@ class SessionForm extends React.Component {
 	}
 
 	navLink(){
-		if (this.props.formType === "login") {
+		if (this.props.formType === "login" || this.props.formType === "" ) {
 			return <Link to="/signup">Sign up</Link>;
 		} else {
 			return <Link to="/login">Log in</Link>;
@@ -73,7 +72,7 @@ class SessionForm extends React.Component {
 	}
 
 	emailAndName(){
-		if (this.props.formType === "login" ) {
+		if (this.props.formType === "login" || this.props.formType === "" ) {
 			return "";
 		} else {
 			return (
@@ -114,7 +113,7 @@ class SessionForm extends React.Component {
 	}
 
 	welcomeMessage(){
-		if (this.props.formType === "login" ) {
+		if (this.props.formType === "login" || this.props.formType === "" ) {
 			return (
 				<div>
 					<h2 className="login-title">Log in</h2>
@@ -143,7 +142,7 @@ class SessionForm extends React.Component {
     const demoUser = "ForrestGump";
 		const demoName = "Forrest Gump ";
 		const demoEmail = "runforrest@bubbashrimp.com ";
-		if (this.props.formType === "login" ) {
+		if (this.props.formType === "login" || this.props.formType === "" ) {
 	    const intervalID = setInterval(function () {
 	      if (i < 12) {
 					that.setState({ username: demoUser.slice(0, i) });
