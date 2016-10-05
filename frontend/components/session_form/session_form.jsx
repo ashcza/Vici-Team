@@ -12,6 +12,7 @@ class SessionForm extends React.Component {
 		this._handleDemo = this._handleDemo.bind(this);
 		this.nameChange = this.nameChange.bind(this);
 		this.passwordChange = this.passwordChange.bind(this);
+		debugger;
 	}
 
 	componentWillReceiveProps(newProps){
@@ -54,6 +55,7 @@ class SessionForm extends React.Component {
 	}
 
 	renderErrors(){
+		if (this.props.errors) {
 		return(
 			<ul className="sign-in-errors">
 				{this.props.errors.map( (error, i) => (
@@ -63,6 +65,11 @@ class SessionForm extends React.Component {
 				))}
 			</ul>
 		);
+	} else {
+		return (
+			<div></div>
+		);
+	}
 	}
 
 	emailAndName(){

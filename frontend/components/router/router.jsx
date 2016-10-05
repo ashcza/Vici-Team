@@ -32,8 +32,9 @@ class AppRouter extends React.Component{
   _redirectIfLoggedIn(nextState, replace){
     const currentState = this.context.store.getState();
     const currentUser = currentState.session.currentUser;
+    debugger;
     if (currentUser) {
-      replace('/');
+      replace(`groups/${currentUser.group}`);
     }
   }
 
@@ -41,8 +42,8 @@ class AppRouter extends React.Component{
     return(
       <Router history={ hashHistory }>
         <Route path="/" component={ App }>
-          <IndexRoute component={HomePageContainer}/>
-          <Route path="/login" component={ SessionFormContainer } onEnter={this._redirectIfLoggedIn}/>
+          <IndexRoute component={ SessionFormContainer } onEnter={this._redirectIfLoggedIn}/>
+          // <Route path="/login" component={ SessionFormContainer } onEnter={this._redirectIfLoggedIn}/>
           <Route path="/signup" component={ SessionFormContainer } onEnter={this._redirectIfLoggedIn}/>
           <Route path="/new-group" component={ NewGroupContainer } onEnter={this._ensureLoggedIn} />
           <Route path="/groups/:groupId" component={ GroupPageContainer } onEnter={this._ensureLoggedIn} >
