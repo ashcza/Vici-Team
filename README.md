@@ -22,7 +22,7 @@ I plan to make an app that solves the back and forth by automating a portion of 
 # Sportee
 
 
-[Production link (TBD)][production]
+[www.ViciTeam.com][www.viciteam.com]
 
 [Heroku link][heroku]
 
