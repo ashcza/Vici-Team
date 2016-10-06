@@ -24,15 +24,10 @@ My pickup soccer group tediously organized their biweekly games via email. The o
 
 This is a lot of effort for two games a week. On top of this, some people even replied all! Vici Team transformed this process:
 
--> RSVP to Event <-
-
 <p align="center">
 <img src="http://res.cloudinary.com/ashcon/image/upload/v1475728282/vici/eventconfirmationvici.gif">
 </p>
 
-<p align="center">
-<img src="http://res.cloudinary.com/ashcon/image/upload/v1475730308/vici/giphy_2.gif">
-</p>
 
 ## Features
 
@@ -116,3 +111,7 @@ Users who are member of groups will receive text updates when new events are cre
 ### Google Maps View
 
 Allow user to browse groups via a Google Maps.
+
+<p align="center">
+<img src="http://res.cloudinary.com/ashcon/image/upload/v1475730308/vici/giphy_2.gif">
+</p>
