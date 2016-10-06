@@ -76,12 +76,12 @@ __________
 
 ### Group New Event Tab
 
-![GroupPage.png](http://res.cloudinary.com/ashcon/image/upload/v1474265861/Github/NewEventGif.gif)
+![GroupPage.png](http://res.cloudinary.com/ashcon/image/upload/v1475779606/vici/Editevent.gif)
 
 
 #### Edit/Delete Privileges
 
-The privilege to edit/delete an event is only displayed on an event if the current user signed in is the creator of the event. In the example above, the current user has created the first event (note the edit and delete icons at top right). Likewise, only users who have created the group (organizer) have the ability delete the group (Delete group button on left sidebar).
+The privilege to edit/delete an event is only displayed on an event if the current user signed in is the organizer of the group. In the example above, the organizer is logged in (note the edit and delete icons at top right).
 __________
 
 ### Group Members Tab
