@@ -53,10 +53,6 @@ Users are able to RSVP to events and see a live update to the number of people a
 | ![Rsvps3.png](http://res.cloudinary.com/ashcon/image/upload/v1475773605/vici/maxrsvp2.gif)      | ![Rsvps4.png](http://res.cloudinary.com/ashcon/image/upload/c_scale,w_480/v1475734193/vici/IMG_2639.jpg) |
 
 
-<p align="center">
-<img src="http://res.cloudinary.com/ashcon/image/upload/v1475734111/vici/maxrsvp.gif"><img src="http://res.cloudinary.com/ashcon/image/upload/v1475734193/vici/IMG_2639.jpg" width="250">
-</p>
-
 The group organizer sets a limit on the number of users that can attend the event. Users are not able to RSVP via the online site or via texting if the event has reached maximum capacity.
 
 
