@@ -22,6 +22,7 @@ My pickup soccer group tediously organized their biweekly games via email. The o
 
 ![emails.png](http://res.cloudinary.com/ashcon/image/upload/v1475724667/vici/Emails.png)
 
+
 This is a lot of effort for two games a week. On top of this, some people even replied all! Vici Team transformed this process:
 
 <p align="center">
@@ -34,11 +35,17 @@ This is a lot of effort for two games a week. On top of this, some people even r
 ### Home / Group Events Tab
 ![GroupPage.png](http://res.cloudinary.com/ashcon/image/upload/v1475734082/vici/Front_Page.png)
 
-#### RSVPs
+#### Group Code
+Upon sign up users are required to supply a group code which links their account to a single group. After logging in, users are automatically navigated to their respective group. The user's phone number is also tied to that group, allowing the user to interact with Vici Team via text messages.
 
+#### RSVPs
+Web
 ![Rsvps.png](http://res.cloudinary.com/ashcon/image/upload/v1475734088/vici/rsvp.gif)
 
-Users are able to RSVP to events and see a live update to the number of people attending the event. Users are also able to remove RSVPs via the same button.
+Mobile
+http://res.cloudinary.com/ashcon/image/upload/v1475687748/vici/giphy.gif
+
+Users are able to RSVP to events and see a live update to the number of people attending the event. Users are also able to remove RSVPs via the same button. Users also have the option to simply text "In" to the Vici Team number.
 
 #### RSVP Limit
 
