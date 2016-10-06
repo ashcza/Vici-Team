@@ -34,11 +34,14 @@ This is a lot of effort for two games a week. On top of this, some people even r
 
 ### Home / Group Events Tab
 
-#### Group Member View (No Access to Create Event tab)
+#### Group Member View (No Access to New Event tab)
 ![GroupPage.png](http://res.cloudinary.com/ashcon/image/upload/v1475793915/vici/Screen_Shot_2016-10-06_at_3.42.58_PM.png)
 
-#### Organizer View (Access to Create Event tab)
+#### Organizer View (Access to New Event tab)
 ![GroupPage.png](http://res.cloudinary.com/ashcon/image/upload/v1475793918/vici/Screen_Shot_2016-10-06_at_3.45.01_PM.png)
+
+#### Home Page
+Note that the new event tab is only available to the organizer of the group. This limits event creation to the organizer.
 
 #### Group Code
 Upon sign up users are required to supply a group code which links their account to a single group. After logging in, users are automatically navigated to their respective group. The user's phone number is also tied to that group, allowing the user to interact with Vici Team via text messages.
