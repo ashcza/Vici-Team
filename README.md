@@ -18,12 +18,13 @@ This project has been implemented using the Ruby on Rails web framework, a Postg
 
 ### Background
 
-My pickup soccer group tediously organized their biweekly games via email. The organizer often goes through the following emails **just for one game.**
+My pickup soccer group tediously organized their biweekly games via email. The organizer often went through the following emails **just for one game.**
 
 ![emails.png](http://res.cloudinary.com/ashcon/image/upload/v1475724667/vici/Emails.png)
 
-This is a lot of effort for two games a week. On top of this, some people even reply all! Vici Team transforms this process:
+This is a lot of effort for two games a week. On top of this, some people even replied all! Vici Team transformed this process:
 
+![TextingConfirmation](http://res.cloudinary.com/ashcon/image/upload/v1475728282/vici/eventconfirmationvici.gif) ![Teams](http://res.cloudinary.com/ashcon/image/upload/v1475728282/vici/eventconfirmationvici.gif)
 
 
 ## Features
