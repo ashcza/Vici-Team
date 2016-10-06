@@ -86,11 +86,11 @@ __________
 
 ### Group Members Tab
 
-![GroupPage.png](http://res.cloudinary.com/ashcon/image/upload/v1474266072/Github/Members.gif)
+![GroupPage.png](http://res.cloudinary.com/ashcon/image/upload/v1475791388/vici/Members.png)
 
 #### Adding/Removing Membership
 
-Users are able to add and remove membership to groups via the button on the group header. Clicking on the button updates the list of people see in the `Members` tab, as well as the total count of members seen on the left sidebar.
+Users are able to view all members of the group and their contact information.
 __________
 
 ### Calendar Tab
