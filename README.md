@@ -15,8 +15,8 @@ I plan to make an app that solves the back and forth by automating a portion of 
 
 
 
-<a href='http://sporteeapp.herokuapp.com'>
-	<img src="http://res.cloudinary.com/ashcon/image/upload/v1473132525/SPORTEE_RED_filled_es8sto.png" height="150">
+<a href='www.viciteam.com'>
+	<img src="http://res.cloudinary.com/ashcon/image/upload/v1475003658/vici/vici_team_final_2.png" height="150">
 </a>
 
 # Sportee
