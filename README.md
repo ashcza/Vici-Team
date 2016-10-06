@@ -23,13 +23,17 @@ My pickup soccer group tediously organized their biweekly games via email. The o
 ![emails.png](http://res.cloudinary.com/ashcon/image/upload/v1475724667/vici/Emails.png)
 
 This is a lot of effort for two games a week. On top of this, some people even replied all! Vici Team transformed this process:
+
+-> RSVP to Event <-
+
 <p align="center">
-<img src="http://res.cloudinary.com/ashcon/image/upload/v1475728282/vici/eventconfirmationvici.gif"><img src="http://res.cloudinary.com/ashcon/image/upload/v1475730308/vici/giphy_2.gif">
+<img src="http://res.cloudinary.com/ashcon/image/upload/v1475728282/vici/eventconfirmationvici.gif">
 </p>
 
-| RSVP to event        | Receive Team Assignments  |
-| ------------- | -----:|
-| ![pic1.png](http://res.cloudinary.com/ashcon/image/upload/v1475728282/vici/eventconfirmationvici.gif)     | ![pic2.png](http://res.cloudinary.com/ashcon/image/upload/v1475730308/vici/giphy_2.gif)  |
+<p align="center">
+<img src="http://res.cloudinary.com/ashcon/image/upload/v1475730308/vici/giphy_2.gif">
+</p>
+
 ## Features
 
 ### Home / Dashboard
