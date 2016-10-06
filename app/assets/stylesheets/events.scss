@@ -403,6 +403,7 @@ ul {
 
 .team-list-page {
   display: flex;
+  justify-content: space-around;
 }
 
 .team-title{
@@ -431,6 +432,7 @@ ul {
 
 .create-team-list{
   margin-right: 16px;
+  margin-top: 5px;
 }
 
 /* The switch - the box around the slider */

@@ -2,6 +2,8 @@ import { receiveCurrentUser,
          receiveErrors,
          SessionConstants
        } from '../actions/session_actions';
+import { Router, Route, IndexRoute, hashHistory } from 'react-router';
+
 
 import { login, signup, logout } from '../util/session_api_util';
 

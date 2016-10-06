@@ -31,7 +31,7 @@ class GroupEvent extends React.Component {
     } else {
       eventKeys = this.props.events.dateOrder;
     }
-
+    
     let eventsList = eventKeys.map(eventKey =>  {
       let rsvpButton;
       if (events[eventKey].rsvp.includes(this.props.currentUser.id)) {
@@ -92,7 +92,6 @@ class GroupEvent extends React.Component {
   }
 
 render () {
-
   return (
     <div className="group-events">
       <ul className="group-event-list">

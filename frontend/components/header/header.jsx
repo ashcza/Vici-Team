@@ -23,8 +23,6 @@ const _navigateToNewGroup = (router) => {
 const navStatus = (currentUser, logout, router) => (
 
 	<hgroup className="header-group">
-    <button className="header-button"
-      onClick={_navigateToNewGroup.bind(null, router)}>Create Group</button>
 		<button className="header-button" onClick={logout}>Log Out</button>
     <div className="header-name">{currentUser.username}
     </div>
