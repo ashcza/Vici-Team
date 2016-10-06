@@ -24,7 +24,7 @@ My pickup soccer group tediously organized their biweekly games via email. The o
 
 This is a lot of effort for two games a week. On top of this, some people even replied all! Vici Team transformed this process:
 
-![TextingConfirmation](http://res.cloudinary.com/ashcon/image/upload/v1475728282/vici/eventconfirmationvici.gif) ![Teams](http://res.cloudinary.com/ashcon/image/upload/v1475728282/vici/eventconfirmationvici.gif)
+-> ![TextingConfirmation](http://res.cloudinary.com/ashcon/image/upload/v1475728282/vici/eventconfirmationvici.gif) ![Teams](http://res.cloudinary.com/ashcon/image/upload/v1475728282/vici/eventconfirmationvici.gif) <-
 
 
 ## Features
