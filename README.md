@@ -16,7 +16,7 @@ I plan to make an app that solves the back and forth by automating a portion of 
 
 
 <a href='www.viciteam.com'>
-	<img src="http://res.cloudinary.com/ashcon/image/upload/v1475003658/vici/vici_team_final_2.png" width="200">
+	<img src="http://res.cloudinary.com/ashcon/image/upload/v1475003658/vici/vici_team_final_2.png" width="300">
 </a>
 
 # Sportee
