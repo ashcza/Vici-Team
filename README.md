@@ -1,5 +1,3 @@
-## Vici Team
-
 <a href='www.viciteam.com'>
 	<img src="http://res.cloudinary.com/ashcon/image/upload/v1475003658/vici/vici_team_final_2.png" width="300">
 </a>
@@ -11,6 +9,8 @@ www.ViciTeam.com
 ## Description
 
 Vici Team simplifies the process of coordinating sports games or general events between large groups of people. This app specifically improves communication between the group organizer and participants by automating notification of events and substituting mass emails with text alerts.
+
+Some features have been leveraged from my previous Sportee app.
 
 ## Technology Stack
 
@@ -31,27 +31,23 @@ This is a lot of effort for two games a week. On top of this, some people even r
 
 ## Features
 
-### Home / Dashboard
-
-![frontpage.gif](http://res.cloudinary.com/ashcon/image/upload/v1474260923/Github/FrontPageGif.gif)
-
-#### Search Bar
-
-The search bar allows for search by group name, distance (miles) from a city, or a combination of both. The ruby gem `geokit-rails` was used to provide functionality for location-oriented searches. The gem leverages the Google maps Geocoding API to convert an address (like "New York, NY") into geographic coordinates (like latitude 40.7128°, and longitude 74.0059° W). The gem also allows for ActiveRecord distance-based finders, identifying any points in the database within a specified distance.
-
-#### Group Events
-
-Pulls all groups into the homepage, filtered by the search query.  Group title and location details are displayed for each group.
-__________
-
-### Group Events Tab
-![GroupPage.png](http://res.cloudinary.com/ashcon/image/upload/v1474262858/Github/Screen_Shot_2016-09-18_at_10.27.25_PM.png)
+### Home / Group Events Tab
+![GroupPage.png](http://res.cloudinary.com/ashcon/image/upload/v1475734082/vici/Front_Page.png)
 
 #### RSVPs
 
-![GroupPage.png](http://res.cloudinary.com/ashcon/image/upload/v1474263319/Github/RSVP.gif)
+![Rsvps.png](http://res.cloudinary.com/ashcon/image/upload/v1475734088/vici/rsvp.gif)
 
 Users are able to RSVP to events and see a live update to the number of people attending the event. Users are also able to remove RSVPs via the same button.
+
+#### RSVP Limit
+
+<p align="center">
+<img src="http://res.cloudinary.com/ashcon/image/upload/v1475734111/vici/maxrsvp.gif"><img src="http://res.cloudinary.com/ashcon/image/upload/v1475734193/vici/IMG_2639.jpg" width="250">
+</p>
+
+The group organizer sets a limit on the number of users that can attend the event. Users are not able to RSVP via the online site or via texting if the event has reached maximum capacity.
+
 
 #### Group Details
 
