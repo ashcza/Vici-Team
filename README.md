@@ -19,10 +19,10 @@ I plan to make an app that solves the back and forth by automating a portion of 
 	<img src="http://res.cloudinary.com/ashcon/image/upload/v1475003658/vici/vici_team_final_2.png" width="300">
 </a>
 
-# Sportee
+# Vici Team
 
 
-[www.ViciTeam.com][www.viciteam.com]
+www.ViciTeam.com
 
 [Heroku link][heroku]
 
