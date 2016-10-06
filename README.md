@@ -27,7 +27,11 @@ This is a lot of effort for two games a week. On top of this, some people even r
 <img src="http://res.cloudinary.com/ashcon/image/upload/v1475728282/vici/eventconfirmationvici.gif"><img src="http://res.cloudinary.com/ashcon/image/upload/v1475730308/vici/giphy_2.gif">
 </p>
 
-
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| ![pic1.png](http://res.cloudinary.com/ashcon/image/upload/v1475728282/vici/eventconfirmationvici.gif)     | right-aligned | ![pic2.png](http://res.cloudinary.com/ashcon/image/upload/v1475730308/vici/giphy_2.gif)  |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 ## Features
 
 ### Home / Dashboard
