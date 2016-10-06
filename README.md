@@ -18,7 +18,7 @@ This project has been implemented using the Ruby on Rails web framework, a Postg
 
 ### Background
 
-My pickup soccer group tediously organized their biweekly games via email. The organizer often goes through the following emails just for one game.
+My pickup soccer group tediously organized their biweekly games via email. The organizer often goes through the following emails **just for one game.**
 
 ![emails.png](http://res.cloudinary.com/ashcon/image/upload/v1475724667/vici/Emails.png)
 
