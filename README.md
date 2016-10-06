@@ -92,6 +92,19 @@ __________
 The privilege to edit/delete an event is only displayed on an event if the current user signed in is the organizer of the group. In the example above, the organizer is logged in (note the edit and delete icons at top right).
 __________
 
+### Team Tab
+
+![GroupPage.png](http://res.cloudinary.com/ashcon/image/upload/v1475734103/vici/pickteams.gif)
+
+#### Selecting Teams
+The group organizer can organize members who have RSVP'd to the most recent event. The members automatically populate with the option to assign users to a black or white team. 
+
+![GroupPage.png](http://res.cloudinary.com/ashcon/image/upload/v1475730308/vici/giphy_2.gif)
+
+#### Text Teams
+Clicking on the Text Teams button sends out team assignments to only the users who have RSVP'd to the event.
+__________
+
 ### Group Members Tab
 
 ![GroupPage.png](http://res.cloudinary.com/ashcon/image/upload/v1475791388/vici/Members.png)
@@ -122,7 +135,3 @@ Users who are member of groups will receive text updates when new events are cre
 ### Google Maps View
 
 Allow user to browse groups via a Google Maps.
-
-<p align="center">
-<img src="http://res.cloudinary.com/ashcon/image/upload/v1475730308/vici/giphy_2.gif">
-</p>
