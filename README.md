@@ -39,6 +39,13 @@ This is a lot of effort for two games a week. On top of this, some people even r
 Upon sign up users are required to supply a group code which links their account to a single group. After logging in, users are automatically navigated to their respective group. The user's phone number is also tied to that group, allowing the user to interact with Vici Team via text messages.
 
 #### RSVPs
+
+| Web        | Mobile           |
+| ------------- |:-------------:|
+| ![Rsvps.png](http://res.cloudinary.com/ashcon/image/upload/v1475734088/vici/rsvp.gif)      | ![Rsvps2.png](http://res.cloudinary.com/ashcon/image/upload/v1475687748/vici/giphy.gif) |
+
+
+
 **Web**
 ![Rsvps.png](http://res.cloudinary.com/ashcon/image/upload/v1475734088/vici/rsvp.gif)
 
