@@ -21,23 +21,15 @@ I plan to make an app that solves the back and forth by automating a portion of 
 
 # Vici Team
 
-
 www.ViciTeam.com
-
-[Heroku link][heroku]
-
-[production]: http://sporteeapp.herokuapp.com
-[heroku]: http://sporteeapp.herokuapp.com
 
 ## Description
 
-Sportee makes it incredibly simple to play sports with people nearby. Inspired by MeetUp, this site allows users to create groups and events for specific sports. The goal is to create an easy to use interface for connecting people who share similar athletic interests.
-
-This project has been implemented using the Ruby on Rails web framework, a PostgreSQL database, and a frontend created with React.js following the Redux architecture. The app delivers content as needed on a single static page.
+Vici Team simplifies the process of coordinating sports games or general events between large groups of people. This app specifically improves communication between the group organizer and participants by automating notification of events and substituting mass emails with text alerts.
 
 ## Technology Stack
 
-This project has been implemented using the Ruby on Rails web framework, a PostgreSQL database, and a frontend created with React.js following the Redux architecture.  
+This project has been implemented using the Ruby on Rails web framework, a PostgreSQL database, and a frontend created with React.js following the Redux architecture. Sending and receiving texts are accomplished through the Twilio API. The app delivers content as needed on a single static page and via text.
 
 ## Features
 
