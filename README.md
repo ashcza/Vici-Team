@@ -1,20 +1,5 @@
 ## Vici Team
 
-### Background
-
-My pickup soccer group tediously organizes their biweekly games via email. The organizer often goes through the following steps just for one game.
-
-- Email out a request for RSVPs for upcoming game
-- Email out a second request for RSVPs, including the names of the people who have signed up so far
-- Email out a final list of people who have made the cut of 16
-- Email out a list of two teams selected from the 16
-
-This is a lot of effort for two games a week. On top of this, some people even reply all.  (-____-)
-
-I plan to make an app that solves the back and forth by automating a portion of the emails and providing a texting option for players to RSVP.
-
-
-
 <a href='www.viciteam.com'>
 	<img src="http://res.cloudinary.com/ashcon/image/upload/v1475003658/vici/vici_team_final_2.png" width="300">
 </a>
@@ -30,6 +15,16 @@ Vici Team simplifies the process of coordinating sports games or general events 
 ## Technology Stack
 
 This project has been implemented using the Ruby on Rails web framework, a PostgreSQL database, and a frontend created with React.js following the Redux architecture. Sending and receiving texts are accomplished through the Twilio API. The app delivers content as needed on a single static page and via text.
+
+### Background
+
+My pickup soccer group tediously organized their biweekly games via email. The organizer often goes through the following emails just for one game.
+
+![emails.png](http://res.cloudinary.com/ashcon/image/upload/v1475724667/vici/Emails.png)
+
+This is a lot of effort for two games a week. On top of this, some people even reply all! Vici Team transforms this process:
+
+
 
 ## Features
 
