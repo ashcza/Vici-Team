@@ -40,17 +40,9 @@ Upon sign up users are required to supply a group code which links their account
 
 #### RSVPs
 
-| Web        | Mobile           |
+| Web App        | Mobile           |
 | ------------- |:-------------:|
 | ![Rsvps.png](http://res.cloudinary.com/ashcon/image/upload/v1475734088/vici/rsvp.gif)      | ![Rsvps2.png](http://res.cloudinary.com/ashcon/image/upload/v1475687748/vici/giphy.gif) |
-
-
-
-**Web**
-![Rsvps.png](http://res.cloudinary.com/ashcon/image/upload/v1475734088/vici/rsvp.gif)
-
-**Mobile**
-![Rsvps2.png](http://res.cloudinary.com/ashcon/image/upload/v1475687748/vici/giphy.gif)
 
 Users are able to RSVP to events and see a live update to the number of people attending the event. Users are also able to remove RSVPs via the same button. Users also have the option to simply text "In" to the Vici Team number.
 
