@@ -16,7 +16,7 @@ Vici Team simplifies the process of coordinating sports games or general events 
 
 This project has been implemented using the Ruby on Rails web framework, a PostgreSQL database, and a frontend created with React.js following the Redux architecture. Sending and receiving texts are accomplished through the Twilio API. The app delivers content as needed on a single static page and via text.
 
-### Background
+## Background
 
 My pickup soccer group tediously organized their biweekly games via email. The organizer often went through the following emails **just for one game.**
 
