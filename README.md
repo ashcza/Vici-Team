@@ -10,7 +10,7 @@ www.ViciTeam.com
 
 Vici Team simplifies the process of coordinating sports games or general events between large groups of people. This app specifically improves communication between the group organizer and participants by automating notification of events and substituting mass emails with text alerts.
 
-Some features have been leveraged from my previous Sportee app.
+Some features have been leveraged from my previous app Sportee.
 
 ## Technology Stack
 
