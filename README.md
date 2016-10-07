@@ -124,10 +124,10 @@ __________
 ### Texting
 
 #### Heroku Jobs - Automatic Texting by Date
-The app is setup with a Heroku Job that runs daily to check to see if there is an event two days from the current day. If there is, the app sends out a text message to all group members reminding them of the event and asking for RSVPs. 
+Vici Team is setup with a Heroku Job that runs daily to check to see if there is an event two days from the current day. If there is, the app sends out a text message to all group members reminding them of the event and asking for RSVPs. 
 
 #### Twilio API - Intelligent Responses
-The Vici Team number that is connected with the Twilio API intelligently responds to user requests based on some of the following factors: the date of the event, the max number of participants allowed to join and whether the user is a member of the group. 
+The Vici Team number that is connected with the Twilio API intelligently responds to user requests based on some of the following factors: the date of the event, the max number of participants allowed to join, and whether the user is a member of the group. 
 
 #### Toggle Texting
 
@@ -142,10 +142,10 @@ __________
 
 I plan to continue the project with the following features:
 
-### Text Updates
+### Intelligent Team Formation
 
-Users who are member of groups will receive text updates when new events are created. Users will be able to text back "In" if they want to RSVP to the event.
+I would like to aggregate weeks of team lineups and use an algorithm that determines patterns in team selection in order to give a suggested team lineup for the organizer.
 
-### Google Maps View
+### Email Feature
 
-Allow user to browse groups via a Google Maps.
+Users who still prefer email can toggle on email messages and respond "In" or "Out" to the email. Vici Team will then handle the RSVP logic similar to the text messaging currently in place.
