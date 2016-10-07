@@ -121,8 +121,24 @@ __________
 #### Calendar View
 
 Calendar displays all of the group events by month. 
+__________
+
+### Texting
+
+#### Heroku Jobs - Automatic Texting by Date
+The app is setup with a Heroku Job that runs daily to check to see if there is an event two days from the current day. If there is, the app sends out a text message to all group members reminding them of the event and asking for RSVPs. 
+
+#### Twilio API - Intelligent Responses
+The Vici Team number that is connected with the Twilio API intelligently responds to user requests based on some of the following factors: the date of the event, the max number of participants allowed to join and whether the user is a member of the group. 
+
+#### Toggle Texting
+
+![GroupPage.png](http://res.cloudinary.com/ashcon/image/upload/v1475734105/vici/toggle.gif)
+
+Users are able to toggle on and off texting notifications. This is useful if they prefer to use the web app instead of texting, or if they are taking a break from the group.
 
 __________
+
 
 ## Future Direction
 
