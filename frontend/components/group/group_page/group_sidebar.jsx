@@ -22,9 +22,11 @@ render () {
     backgroundImage: 'url(' + group.img + ')'
   };
   let destroyButton = <div></div>;
-  if (group && (group.organizer_id === currentUser.id)) {
-    destroyButton = <button className="remove-group-button"
-      onClick={this._removeGroup.bind(null, this.props.group.id)}>Delete Group</button>;
+  if (currentUser) {
+    if (group && (group.organizer_id === currentUser.id)) {
+      destroyButton = <button className="remove-group-button"
+        onClick={this._removeGroup.bind(null, this.props.group.id)}>Delete Group</button>;
+    }
   }
   return (
     <div className="group-sidebar">

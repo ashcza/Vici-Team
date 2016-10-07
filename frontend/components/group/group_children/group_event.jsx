@@ -31,21 +31,22 @@ class GroupEvent extends React.Component {
     } else {
       eventKeys = this.props.events.dateOrder;
     }
-    
+
     let eventsList = eventKeys.map(eventKey =>  {
       let rsvpButton;
-      if (events[eventKey].rsvp.includes(this.props.currentUser.id)) {
-        rsvpButton = <button className="remove-rsvp-button"
-          onClick={this.props.destroyRsvp.bind(null,events[eventKey].id,
-             this.props.currentUser.id, this.props.groupId)}>Remove RSVP</button>;
-      } else {
-        rsvpButton = <button className="create-rsvp-button"
-          onClick={this.props.createRsvp.bind(null,events[eventKey].id,
-             this.props.currentUser.id, this.props.groupId)}>RSVP</button>;
+      if (this.props.currentUser) {
+        if (events[eventKey].rsvp.includes(this.props.currentUser.id)) {
+          rsvpButton = <button className="remove-rsvp-button"
+            onClick={this.props.destroyRsvp.bind(null,events[eventKey].id,
+               this.props.currentUser.id, this.props.groupId)}>Remove RSVP</button>;
+        } else {
+          rsvpButton = <button className="create-rsvp-button"
+            onClick={this.props.createRsvp.bind(null,events[eventKey].id,
+               this.props.currentUser.id, this.props.groupId)}>RSVP</button>;
+        }
       }
-
     let editButtons = <div></div>;
-      if (events[eventKey].user_id === this.props.currentUser.id) {
+      if (this.props.currentUser && events[eventKey].user_id === this.props.currentUser.id) {
         editButtons =
         <div>
         <button type="submit" className="edit-button">

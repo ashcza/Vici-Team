@@ -111,7 +111,7 @@ class GroupHeader extends React.Component {
               <div>{this.state.status}</div>
             </div>
             <label className="switch">
-              <input id="myCheck" type="checkbox" onClick={this.textToggle} checked={this.state.isChecked}/>
+              <input id="myCheck" type="checkbox" onClick={this.textToggle} checked={this.state.isChecked} onChange={function() {}}/>
               <div className="slider round"></div>
             </label>
           </div>
