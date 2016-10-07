@@ -12,7 +12,7 @@ class GroupEditEvent extends React.Component{
       title: this.editEvent.title,
       description: this.editEvent.description,
       duration: this.editEvent.duration,
-      date: "2016-01-02T00:00:13.510",
+      date: this.editEvent.datetime.slice(0, 16),
       groupId: this.props.groupId,
       max: this.editEvent.max,
       userId: this.props.currentUser.id
