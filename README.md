@@ -107,8 +107,6 @@ __________
 
 ![GroupPage.png](http://res.cloudinary.com/ashcon/image/upload/v1475791388/vici/Members.png)
 
-#### Adding/Removing Membership
-
 Users are able to view all members of the group and their contact information.
 __________
 
