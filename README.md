@@ -97,12 +97,10 @@ __________
 ![GroupPage.png](http://res.cloudinary.com/ashcon/image/upload/v1475734103/vici/pickteams.gif)
 
 #### Selecting Teams
-The group organizer can organize members who have RSVP'd to the most recent event. The members automatically populate with the option to assign users to a black or white team. 
+The group organizer can organize members who have RSVP'd to the most recent event. The members automatically populate with the option to assign users to a black or white team. Clicking on the Text Teams button sends out team assignments to only the users who have RSVP'd to the event. Below is a sample text message a member would receive.
+
 
 ![GroupPage.png](http://res.cloudinary.com/ashcon/image/upload/v1475730308/vici/giphy_2.gif)
-
-#### Text Teams
-Clicking on the Text Teams button sends out team assignments to only the users who have RSVP'd to the event.
 __________
 
 ### Group Members Tab
