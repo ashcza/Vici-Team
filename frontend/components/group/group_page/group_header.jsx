@@ -88,8 +88,6 @@ class GroupHeader extends React.Component {
     this.state.status = this.state.status === "ON" ? "OFF" : "ON";
     this.props.updateTexting(this.props.currentUser.id);
     this.forceUpdate();
-    console.log("slide");
-    // this.props.updateTexting(this.props.currentUser.id);
   }
 
   render () {

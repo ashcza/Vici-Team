@@ -3,7 +3,6 @@ export const textTeamColors = function(eventId) {
 	$.ajax({
 		method: 'POST',
 		url: `/api/notifications`,
-    data: notification,
-		success: console.log("texting may have worked")
+    data: notification
 	});
 };

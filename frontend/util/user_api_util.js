@@ -3,7 +3,6 @@ export const updateTexting = function(userId) {
 	$.ajax({
 		method: 'PATCH',
 		url: `/api/user`,
-    data: texting,
-		success: console.log("updated texting")
+    data: texting
 	});
 };
