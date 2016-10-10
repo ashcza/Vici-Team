@@ -77,31 +77,30 @@ class SessionForm extends React.Component {
 		} else {
 			return (
 				<div>
-					<label> Full Name:
-						<input type="text"
-							value={this.state.name}
-							onChange={this.update("name")}
-							className="login-input" />
-					</label>
+						<label className="form-line"> Full Name:
+							<input type="text"
+								value={this.state.name}
+								onChange={this.update("name")}
+								className="login-input" />
+						</label>
 
 					<br />
-					<label> Email:
-						<input type="text"
-							value={this.state.email}
-							onChange={this.update("email")}
-							className="login-input" />
-					</label>
+						<label className="form-line"> Email:
+							<input type="text"
+								value={this.state.email}
+								onChange={this.update("email")}
+								className="login-input" />
+						</label>
 					<br />
 
-					<label> Phone:
+					<label className="form-line"> Phone:
 						<input type="text"
 							value={this.state.phone}
 							onChange={this.update("phone")}
 							className="login-input" />
 					</label>
 					<br />
-
-					<label> Group Code:
+					<label className="form-line"> Group Code:
 						<input type="text"
 							value={this.state.code}
 							onChange={this.update("code")}
@@ -171,7 +170,12 @@ class SessionForm extends React.Component {
 	}
 
 	render() {
+		var divStyle = {
+			backgroundImage: 'url(' + 'http://res.cloudinary.com/ashcon/image/upload/v1476121851/backgroundplaceit_gpjskn.png' + ')'
+		};
+
 		return (
+			<div className="wrapper-background-login" style={divStyle}>
 			<div className="login-form-container">
 				<form onSubmit={this.handleSubmit} className="login-form-box">
 					<br/>
@@ -179,7 +183,7 @@ class SessionForm extends React.Component {
 					{ this.renderErrors() }
 					<div className="login-form">
 						<br />
-						<label> Username:
+						<label className="form-line"> Username:
 							<input type="text"
 								value={this.state.username}
 								onChange={this.nameChange}
@@ -187,7 +191,7 @@ class SessionForm extends React.Component {
 						</label>
 
 						<br />
-						<label> Password:
+						<label className="form-line"> Password:
 							<input type="password"
 								value={this.state.password}
 								onChange={this.passwordChange}
@@ -208,6 +212,7 @@ class SessionForm extends React.Component {
 						</div>
 				</div>
 				</form>
+			</div>
 			</div>
 		);
 	}

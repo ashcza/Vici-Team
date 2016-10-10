@@ -16,13 +16,13 @@ $airgrey2: #dce0e0;
 
 body {
   background: url(http://res.cloudinary.com/ashcon/image/upload/v1472701231/brazil-homepage_h4ivzz.jpg);
-
 }
 
 .login-form-container{
+  background: url(http://res.cloudinary.com/ashcon/image/upload/v1476121851/backgroundplaceit_gpjskn.png);
   margin: 50px auto;
   display: block;
-  width: 33%;
+  width: 400px;
   }
 
 .login-form-box {
@@ -36,7 +36,7 @@ body {
 
 .form-text-detail {
   color: black;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .login-title {
@@ -44,14 +44,16 @@ body {
 }
 
 .login-form {
+  margin-top: -18px;
+  margin-bottom: 18px;
 }
 
-.login-form{
-
-}
 
 .login-input{
-  margin: 10px;
+  margin: 4px;
+  margin-right: 56px;
+  margin-top: 5px;
+  width: 170px;
 }
 
 .login-title{
