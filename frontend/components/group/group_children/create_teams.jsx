@@ -51,11 +51,14 @@ render () {
     }
     let blackTeam = [];
     let whiteTeam = [];
+    let redTeam = [];
     for(let i = 0; i < Object.keys(this.props.event.rsvp).length; i++) {
       if (rsvpList[i][2] === "white") {
         whiteTeam.push(rsvpList[i][1]);
       } else if (rsvpList[i][2] === "black") {
         blackTeam.push(rsvpList[i][1]);
+      } else if (rsvpList[i][2] === "red") {
+        redTeam.push(rsvpList[i][1]);
       }
     }
 
@@ -78,6 +81,7 @@ render () {
                   <RadioGroup name="players" selectedValue={this.props.event.rsvp[key][2]}>
                     <Radio value="black" name={key} onChange={this.handleChange.bind(null, this.props.event.rsvp[key][0])} />Black
                     <Radio value="white" name={key} className="color-choice" onChange={this.handleChange.bind(null, this.props.event.rsvp[key][0])}/>White
+                    <Radio value="red" name={key} className="color-choice" onChange={this.handleChange.bind(null, this.props.event.rsvp[key][0])}/>Red
                   </RadioGroup>
                 </form>
               </div>
@@ -102,6 +106,18 @@ render () {
             <div className="team-names">
               {
                 blackTeam.map( (player, idx) => {
+                  return (
+                  <div className="player-names-team" key={player}>
+                    {idx + 1}. {player}
+                  </div>
+                );})
+              }
+            </div>
+
+            <div className="team-title">Red Team</div>
+            <div className="team-names">
+              {
+                redTeam.map( (player, idx) => {
                   return (
                   <div className="player-names-team" key={player}>
                     {idx + 1}. {player}
