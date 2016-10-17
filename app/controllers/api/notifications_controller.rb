@@ -3,6 +3,8 @@ class Api::NotificationsController < ApplicationController
   def create
     black_team = Rsvp.where(event_id: notification_params[:event_id], color: "black").map {|rsvp| User.find(rsvp.user_id).name}
     white_team = Rsvp.where(event_id: notification_params[:event_id], color: "white").map {|rsvp| User.find(rsvp.user_id).name}
+    red_team = Rsvp.where(event_id: notification_params[:event_id], color: "red").map {|rsvp| User.find(rsvp.user_id).name}
+    red_team = "none" if red_team.length == 0
     event = Event.find(notification_params[:event_id])
     date = event.date.strftime("%A, %b %e")
     time = event.date.strftime("%l:%M %p")
