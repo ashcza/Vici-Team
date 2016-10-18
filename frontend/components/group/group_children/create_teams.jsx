@@ -26,9 +26,11 @@ class CreateTeams extends React.Component {
     textButton: "teams-texted",
     textContent: "Texts Sent!"
     };
-
     this.setState(newState);
-    this.props.textTeamColors(this.props.event.id);
+    if (this.props.currentUser.id !== 2) {
+      this.props.textTeamColors(this.props.event.id);
+      console.log("teams texted");
+    }
     setTimeout(this.setDefaultState, 2500);
   }
 
