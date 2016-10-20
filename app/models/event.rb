@@ -21,6 +21,7 @@ class Event < ActiveRecord::Base
 	end
 
   def self.text_event
+    newevent = Group.find(2)
     group = Group.find(1)
     @event = group.events.where("date > ?", Date.today).sort_by{|a| a.date}.first
     if ((Time.zone.now - @event.date).to_i / 1.day) == -2
