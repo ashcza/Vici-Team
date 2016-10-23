@@ -176,43 +176,46 @@ class SessionForm extends React.Component {
 
 		return (
 			<div className="wrapper-background-login" style={divStyle}>
-			<div className="login-form-container">
-				<form onSubmit={this.handleSubmit} className="login-form-box">
-					<br/>
-					{ this.welcomeMessage() }
-					{ this.renderErrors() }
-					<div className="login-form">
-						<br />
-						<label className="form-line"> Username:
-							<input type="text"
-								value={this.state.username}
-								onChange={this.nameChange}
-								className="login-input" />
-						</label>
-
-						<br />
-						<label className="form-line"> Password:
-							<input type="password"
-								value={this.state.password}
-								onChange={this.passwordChange}
-								className="login-input" />
-						</label>
-
-						<br />
-						{this.emailAndName()}
-						<div className="session-buttons">
-							<input type="submit" className="enter-button" value="Submit" />
-							<div>
-								<input type="button"
-	                       value="Log in with Demo"
-	                       className="demo-button"
-	                       onClick={this._handleDemo} />
-											 <p className="form-text-detail">Login with existing demo account</p>
-							</div>
-						</div>
+				<div>
+					<p className="tagline">Less scheduling, more playing.</p>
 				</div>
-				</form>
-			</div>
+				<div className="login-form-container">
+					<form onSubmit={this.handleSubmit} className="login-form-box">
+						<br/>
+						{ this.welcomeMessage() }
+						{ this.renderErrors() }
+						<div className="login-form">
+							<br />
+							<label className="form-line"> Username:
+								<input type="text"
+									value={this.state.username}
+									onChange={this.nameChange}
+									className="login-input" />
+							</label>
+
+							<br />
+							<label className="form-line"> Password:
+								<input type="password"
+									value={this.state.password}
+									onChange={this.passwordChange}
+									className="login-input" />
+							</label>
+
+							<br />
+							{this.emailAndName()}
+							<div className="session-buttons">
+								<input type="submit" className="enter-button" value="Submit" />
+								<div>
+									<input type="button"
+		                       value="Log in with Demo"
+		                       className="demo-button"
+		                       onClick={this._handleDemo} />
+												 <p className="form-text-detail">Login with existing demo account</p>
+								</div>
+							</div>
+					</div>
+					</form>
+				</div>
 			</div>
 		);
 	}

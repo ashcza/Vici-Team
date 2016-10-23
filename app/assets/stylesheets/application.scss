@@ -54,8 +54,22 @@
   position: fixed;
   top: 58px;
   left: 0;
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-between;
+  // align-items: flex-start;
 }
 
+.tagline {
+  text-align: center;
+  margin-top: 50px;
+  color: black;
+  // background-color: black;
+  font-size: 60px;
+  font-family: 'Bungee', cursive;
+  -webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: white;
+}
 
 .background-text {
   z-index: 100;
