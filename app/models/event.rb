@@ -23,7 +23,7 @@ class Event < ActiveRecord::Base
   def self.text_event
     group = Group.find(1)
     @event = group.events.where("date > ?", Date.today).sort_by{|a| a.date}.first
-    if ((Time.zone.now - @event.date).to_i / 1.day) == -2
+    if ((Time.zone.now - @event.date).to_i / 1.day) == -3
       date = @event.date.strftime("%A, %b %e")
       time = @event.date.strftime("%l:%M %p")
 
