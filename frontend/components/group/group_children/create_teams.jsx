@@ -51,7 +51,6 @@ render () {
     } else {
       this.memberKeys = Object.keys(this.props.event.rsvp);
     }
-    let greenTeam = [];
     let blackTeam = [];
     let whiteTeam = [];
     let redTeam = [];
