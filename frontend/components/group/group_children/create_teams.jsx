@@ -44,6 +44,7 @@ class CreateTeams extends React.Component {
 
 render () {
   if (this.props.event) {
+    let add;
     let rsvpList = this.props.event.rsvp;
     if (this.props.groups[Object.keys(this.props.groups)[0]].organizer_id !== this.props.currentUser.id) {
       this.memberKeys = [];
