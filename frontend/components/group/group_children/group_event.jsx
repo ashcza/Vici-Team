@@ -35,7 +35,7 @@ class GroupEvent extends React.Component {
     let eventsList = eventKeys.map(eventKey =>  {
       let rsvpButton;
       if (this.props.currentUser) {
-        if (events[eventKey].rsvp.includes(this.props.currentUser.id)) {
+        if (events[eventKey].rsvp.indexOf(this.props.currentUser.id) >= 0) {
           rsvpButton = <button className="remove-rsvp-button"
             onClick={this.props.destroyRsvp.bind(null,events[eventKey].id,
                this.props.currentUser.id, this.props.groupId)}>Remove RSVP</button>;
