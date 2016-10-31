@@ -10,7 +10,6 @@ class GroupEvent extends React.Component {
   }
 
   componentDidMount() {
-    let mount = true;
     if (this.props.groupId) {
     this.props.requestEvents(this.props.groupId);
     }
