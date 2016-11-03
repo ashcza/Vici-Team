@@ -40,7 +40,6 @@ class CreateTeams extends React.Component {
     textContent: "Text Teams"
     };
     this.setState(oldState);
-    // this.setState(oldState);
   }
 
 render () {
