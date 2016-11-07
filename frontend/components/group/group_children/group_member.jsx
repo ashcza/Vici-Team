@@ -30,7 +30,7 @@ render () {
   } else {
 return (
   <div className="group-members-list">
-    "not working"
+    "."
   </div>
   );
   }
